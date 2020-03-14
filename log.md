@@ -1,9 +1,9 @@
-# 100 Days Of Code -- Log -- Round 1
+# Pete's Log: 100 Days Of Code Challenge (Round 1)
 
-## Day 1: March 15, 2020 -- Sudoku Solver
+## Day 1: March 15, 2020: Sunday
 
-**Today's Progress**: Fixed CSS, worked on canvas functionality for the app.
+**Today's Progress:**
 
-**Thoughts:** I really struggled with CSS, but, overall, I feel like I am slowly getting better at it. Canvas is still new for me, but I managed to figure out some basic functionality.
+**Thoughts:**
 
-**Link to work:** [Calculator App](http://www.example.com)
+**Link to work:**

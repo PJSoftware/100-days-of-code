@@ -4,9 +4,9 @@
 
 ### *I will code for at least an hour every day for the next 100 days.*
 
-#### Start Date
+#### Start Date (Round 1)
 
-March 15th, 2020.
+March 15th, 2020: Sunday.
 
 ## Additional Rules
 
