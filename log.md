@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 3: March 17, 2020: Tuesday
+
+**Today's Progress:** Added **increment-log.py** to this repository.
+
+**Thoughts:** I wanted a script to automate adding a new day to our **log.md** file. It would have been a matter of moments to write this in Perl--so I opted to write it in Python instead. I am still at the "google every line of code" stage with Python, so it took a little longer.
+
+**Link to work:** [increment-log.py](https://github.com/PJSoftware/100-days-of-code/blob/master/increment-log.py)
+
 ## Day 2: March 16, 2020: Monday
 
 **Today's Progress:** Revised code structure. Import() and Display() now working as intended.
