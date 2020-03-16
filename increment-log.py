@@ -35,8 +35,8 @@ def insertDay(wf, m):
     h2 = h2 + date.strftime("%B %d, %Y: %A")
 
     wf.write(h2 + "\n\n")
+    wf.write("### [text](url) Day n\n\n")
     wf.write("**Today's Progress:** \n\n")
     wf.write("**Thoughts:** \n\n")
-    wf.write("**Link to work:** [text](url)\n\n")
 
 incLog()
