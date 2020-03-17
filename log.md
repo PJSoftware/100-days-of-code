@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 3: March 17, 2020: Tuesday
+
+### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 3
+
+**Today's Progress:** The First Pass solver technically should be working, but I appear to have a bug in the code which updates the cell possible values.
+
+**Thoughts:** I'm not sure quite what the problem is, but some of my "possible cell value" data is not being set properly. I need to dig into it a little deeper. Looks like Day 4 will be primarily a debugging session.
+
 ## Day 2: March 16, 2020: Monday
 
 ### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 2
