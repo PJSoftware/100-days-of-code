@@ -3,8 +3,14 @@
 import datetime
 import re
 import os
+import subprocess
 
 def incLog():
+    gs = subprocess.run(['git', 'diff-index', 'master', 'log.md'], stdout=subprocess.PIPE)
+    if gs.stdout != b'':
+        print("log.md has uncommitted changes; ignoring")
+        return
+
     rf = open("log.md", "r")
     wf = open("log.md.out", "w")
     added = False
