@@ -24,6 +24,7 @@ def incLog():
 
 def insertDay(wf, m):
     if m.group(1) == "###":
+        print("Please edit Day", m.group(2),"stub before adding another")
         return
 
     day = int(m.group(2))
@@ -34,6 +35,7 @@ def insertDay(wf, m):
     h2 = "### Day " + str(day+1) + ": "
     h2 = h2 + date.strftime("%B %d, %Y: %A")
 
+    print("Adding Day", day+1, "stub")
     wf.write(h2 + "\n\n")
     wf.write("### [text](url) Day n\n\n")
     wf.write("**Today's Progress:** \n\n")
