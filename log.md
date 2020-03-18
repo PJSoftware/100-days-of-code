@@ -1,5 +1,21 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 4: March 18, 2020: Wednesday
+
+### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 4
+
+**Today's Progress:** Zero!
+
+**Thoughts:** I've spent some time adding print statements and attempting to decipher what I'm seeing. It seems as though, for each set of cellCollection objects, only the final cell is being updated. I have arrays of arrays of pointers to arrays of pointers -- and I think somewhere in there, my understanding of how things work does not match with reality.
+
+More, smarter debugging and/or testing is required.
+
+### Log Incrementer [increment-log.py](https://github.com/PJSoftware/100-days-of-code/blob/master/increment-log.py) Update 1
+
+**Today's Progress:** Added detection of git status of log.md; will not add a new day's entry until previous changes have been committed.
+
+**Thoughts:** Now that this is in place, we no longer need the somewhat clumsy method of making our new "##" an "###" to allow detection that way. Both approaches achieve the same end result: preventing us from inadvertently running the script multiple times between edits. Also, added an enum.
+
 ## Day 3: March 17, 2020: Tuesday
 
 ### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 3
