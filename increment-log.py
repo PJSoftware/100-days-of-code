@@ -5,6 +5,15 @@ import re
 import os
 import subprocess
 
+from enum import Enum
+
+# GI => GroupIndex
+class GI(Enum):
+    Day = 1
+    Month = 2
+    MDay = 3
+    Year = 4
+    
 def incLog():
     gs = subprocess.run(['git', 'diff-index', 'master', 'log.md'], stdout=subprocess.PIPE)
     if gs.stdout != b'':
@@ -17,7 +26,7 @@ def incLog():
 
     for line in rf:
         if not added:
-            m = re.match(r"^(#+) Day (\d+): (\S+) (\d+), (\d+)", line)
+            m = re.match(r"^#+ Day (\d+): (\S+) (\d+), (\d+)", line)
             if m:
                 insertDay(wf, m)
                 added = True
@@ -29,12 +38,8 @@ def incLog():
     os.rename("log.md.out", "log.md")
 
 def insertDay(wf, m):
-    if m.group(1) == "###":
-        print("Please edit Day", m.group(2),"stub before adding another")
-        return
-
-    day = int(m.group(2))
-    ds = m.group(4)+" "+m.group(3)+" "+m.group(5)
+    day = int(m.group(GI.Day))
+    ds = m.group(GI.MDay)+" "+m.group(GI.Month)+" "+m.group(GI.Year)
     date = datetime.datetime.strptime(ds, "%d %B %Y")
     date = date + datetime.timedelta(days=1)
 
