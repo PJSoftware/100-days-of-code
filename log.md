@@ -1,5 +1,15 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 5: March 19, 2020: Thursday
+
+### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 5
+
+**Today's Progress:** Rewrote the code. It now works -- although it cannot solve more difficult puzzles.
+
+**Thoughts:** While pulling the code apart so I could clean up some of the unnecessary complications, I noticed a loop around a block of code which did not actually make sense. That may not have been the cause of the bug, but it certainly wasn't helping. The new version is cleaner, and it works.
+
+The next step will be to figure out how to solve more complex puzzles.
+
 ## Day 4: March 18, 2020: Wednesday
 
 ### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 4
