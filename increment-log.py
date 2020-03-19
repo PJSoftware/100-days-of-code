@@ -26,7 +26,7 @@ def incLog():
 
     for line in rf:
         if not added:
-            m = re.match(r"^#+ Day (\d+): (\S+) (\d+), (\d+)", line)
+            m = re.match(r"^[#]+ Day (\d+): (\S+) (\d+), (\d+)", line)
             if m:
                 insertDay(wf, m)
                 added = True
@@ -38,8 +38,8 @@ def incLog():
     os.rename("log.md.out", "log.md")
 
 def insertDay(wf, m):
-    day = int(m.group(GI.Day))
-    ds = m.group(GI.MDay)+" "+m.group(GI.Month)+" "+m.group(GI.Year)
+    day = int(m.group(GI.Day.value))
+    ds = m.group(GI.MDay.value)+" "+m.group(GI.Month.value)+" "+m.group(GI.Year.value)
     date = datetime.datetime.strptime(ds, "%d %B %Y")
     date = date + datetime.timedelta(days=1)
 
