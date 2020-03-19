@@ -26,7 +26,7 @@ def incLog():
 
     for line in rf:
         if not added:
-            m = re.match(r"^[#]+ Day (\d+): (\S+) (\d+), (\d+)", line)
+            m = re.match(r"^#+ Day (\d+): (\S+) (\d+), (\d+)", line)
             if m:
                 insertDay(wf, m)
                 added = True
@@ -43,7 +43,7 @@ def insertDay(wf, m):
     date = datetime.datetime.strptime(ds, "%d %B %Y")
     date = date + datetime.timedelta(days=1)
 
-    h2 = "### Day " + str(day+1) + ": "
+    h2 = "## Day " + str(day+1) + ": "
     h2 = h2 + date.strftime("%B %d, %Y: %A")
 
     print("Adding Day", day+1, "stub")
