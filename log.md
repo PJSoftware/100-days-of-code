@@ -1,5 +1,17 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 7: March 21, 2020: Saturday
+
+### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 7
+
+**Today's Progress:** Added another solver.
+
+**Thoughts:** The second solving method is to examine each block and, for each value that is not already used, examine all empty squares to determine if any of them only have one possible location. To simplify the code calling each solution in turn, I built a function table; all future solutions simply need to be added to the table in order to be processed.
+
+The new code solves at least one of the puzzles in my meagre repertoire which was previously unsolvable, so I guess that's progress.
+
+Next step: work on solving the remaining cells of the unsolvable puzzles, determine my next strategy, and codify it.
+
 ## Day 6: March 20, 2020: Friday
 
 ### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 6
