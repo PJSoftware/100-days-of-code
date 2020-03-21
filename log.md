@@ -1,5 +1,25 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 6: March 20, 2020: Friday
+
+### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 6
+
+**Today's Progress:** Added ShowWorking and OPV support
+
+**Thoughts:** I actually did not do any of this coding until Saturday morning, but I did a lot of thinking about it on Friday, so it counts. (I'll be doing more coding on Saturday too!)
+
+First, I refined the display of the grid to improve readability.
+
+Second, I added the ability for my solvers to optionally show their working. At the same time I clarified the "OnePossibleValue" approach which my only actual solver func uses. This became necessary because I had added a couple more "easy"/"medium" puzzles (from a magazine Mum had, while I was at her place on Thursday night) which I *expected* my solver to handle, but which it could not touch. It did not make sense, because from a quick visual inspection I could easily fill in a couple of values. Something was going wrong, and I needed to figure out what.
+
+Turns out what was going on was that my code was working perfectly as intended. It was my brain that was glitching; the method I was using to get started on the new puzzles was not simply "OnePossibleValue"; I was actually visually identifying narrow points in individual blocks and then eliminating possible values for surrounding cells. It was just so automatic that I thought I was doing OPV processing.
+
+Did I just debug my brain?
+
+Now I need to analyse what I was actually doing by eye, and convert that back into code. But that's a task for tomorrow\*.
+
+*\* Later today!*
+
 ## Day 5: March 19, 2020: Thursday
 
 ### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 5
