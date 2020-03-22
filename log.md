@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 8: March 22, 2020: Sunday
+
+### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 8
+
+**Today's Progress:** Added third solver
+
+**Thoughts:** The code for this one is a little ... messy. I feel it could probably be refactored quite a bit, and that will probably happen when I add the next solver, because I feel they'll both be using similar code. Adding this solver allowed us to solve our "hard" puzzle.
+
 ## Day 7: March 21, 2020: Saturday
 
 ### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 7
