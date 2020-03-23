@@ -1,5 +1,17 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 9: March 23, 2020: Monday
+
+### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 9
+
+**Today's Progress:** Added '-all' option
+
+**Thoughts:** The '-all' option directs the solver to attempt to solve all puzzles contained in the 'puzzles' folder. Summaries of the results will be displayed. This provides an easier way to test the latest solvers on all available puzzles.
+
+Having looked at the final state of the two puzzles which cannot currently be solved, it seems that the planned fourth solver will not be able to make much progress on one of them ("expert.sp") and therefore, perhaps I need to revise my intended approach somewhat.
+
+I may need to start actually researching advanced solving techniques.
+
 ## Day 8: March 22, 2020: Sunday
 
 ### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 8
