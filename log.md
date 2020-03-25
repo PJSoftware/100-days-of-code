@@ -1,5 +1,19 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 10: March 24, 2020: Tuesday
+
+### [AutoTweeter](https://github.com/PJSoftware/AutoTweeter) Day 1
+
+**Today's Progress:** Preliminary work on AutoTweeter
+
+**Thoughts:** This code is adapted from [TutorialEdge.net](https://tutorialedge.net/golang/writing-a-twitter-bot-golang/) and uses a couple of external libraries. Ultimately I think I'd like to tackle writing something from scratch, but for now I just wanted something that worked.
+
+The **TutorialEdge** code worked by setting your API user tokens as part of your environment--because as author **Elliot Forbes** rightly says, information like that should not be committed to your repository. Since I work on two different home machines at the moment--a desktop and a laptop--I opted instead to save my API tokens in a json file on my home network so that both computers can access them easily.
+
+Tweeting via this code does actually work, but that is only part of what I want it to do. The second step would be for it to read and parse *this* log file, pull out the most recent Day number, project name, and "Today's Progress" blurb, and construct a tweet from those.  However, it should *also* commit (and push) this file to github using the same information. Possibly "AutoTweeter" is a bit of a misnomer, and the repo name may change at some point.
+
+**Things to Investigate Further:** Go Modules. Also, how best to publish individual Go packages to github so I can use them in multiple projects if required.
+
 ## Day 9: March 23, 2020: Monday
 
 ### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 9
