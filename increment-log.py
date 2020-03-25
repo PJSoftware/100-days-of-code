@@ -44,9 +44,10 @@ def insertDay(wf, m):
     date = date + datetime.timedelta(days=1)
 
     h2 = "## Day " + str(day+1) + ": "
-    h2 = h2 + date.strftime("%B %d, %Y: %A")
+    datestr = date.strftime("%B %d, %Y: %A")
+    h2 = h2 + datestr
 
-    print("Adding Day", day+1, "stub")
+    print("Adding Day", day+1, "stub [" + datestr + "]")
     wf.write(h2 + "\n\n")
     wf.write("### [text](url) Day n\n\n")
     wf.write("**Today's Progress:** \n\n")
