@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 11: March 25, 2020: Wednesday
+
+### [AutoTweeter](https://github.com/PJSoftware/AutoTweeter) Day 2
+
+**Today's Progress:** AutoTweeter completed; now commits AND tweets
+
+**Thoughts:** Of course, until I run my script (renamed TweetCommit.exe in this folder) I won't actually know if it works as intended. That's the joy of code which tweets and/or commits: you don't want to be test-running it a thousand times on potentially live systems.
+
 ## Day 10: March 24, 2020: Tuesday
 
 ### [AutoTweeter](https://github.com/PJSoftware/AutoTweeter) Day 1
