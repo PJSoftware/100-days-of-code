@@ -1,26 +1,62 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 12: March 26, 2020: Thursday
+
+### [TweetCommit (was AutoTweeter)](https://github.com/PJSoftware/TweetCommit) Final Tweak
+
+**Today's Progress:** Renamed. Added code to prevent tweeting the same entry more than once.
+
+**Thoughts:** So ... `increment-log.py` has safeguards to prevent it from incrementing the log when there are uncommitted changes, or when it only contains the stub from the previous run. And `TweetCommit.exe` has safeguards to prevent it from doing anything when the log has not yet been filled in. But as far as I can tell, if I happen to run it twice in a row, there is nothing to stop it from tweeting out the same tweet it has already sent. Which is, I guess, not actually *wrong*, but it *is* a little spammy.
+
+I guess the best way to achieve that would be to check whether git considers the `log.md` file clean or not. We have already done this in `Python` with:
+
+```python
+    gs = subprocess.run(['git', 'diff-index', 'master', 'log.md'], stdout=subprocess.PIPE)
+    if gs.stdout != b'':
+        print("log.md has uncommitted changes; ignoring")
+        return
+```
+
+The question is, how do we do this in `Go`? Presumably the same way: run `git diff-index` and interpret the result. Time to do a little more reading around the `exec` library, I guess.
+
+**Solution:**
+
+```go
+    out, err := exec.Command("git", "diff-index", "HEAD", fn).Output()
+    if err != nil {
+        log.Fatal(err)
+    }
+    str := string(out)
+
+    if str == "" { // no changes
+        return true
+    }
+
+```
+
+It also occurs to me that a "do you want to proceed?" prompt would be worth adding as a last resort.
+
 ## Day 11: March 25, 2020: Wednesday
 
-### [AutoTweeter](https://github.com/PJSoftware/AutoTweeter) Day 2
+### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Day 2
 
-**Today's Progress:** AutoTweeter completed; now commits AND tweets
+**Today's Progress:** TweetCommit completed; now commits AND tweets
 
-**Thoughts:** Of course, until I run my script (renamed TweetCommit.exe in this folder) I won't actually know if it works as intended. That's the joy of code which tweets and/or commits: you don't want to be test-running it a thousand times on potentially live systems.
+**Thoughts:** Of course, until I run my script I won't actually know if it works as intended. That's the joy of code which tweets and/or commits: you don't want to be test-running it a thousand times on potentially live systems.
 
 **Update:** It works!
 
 ## Day 10: March 24, 2020: Tuesday
 
-### [AutoTweeter](https://github.com/PJSoftware/AutoTweeter) Day 1
+### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Day 1
 
-**Today's Progress:** Preliminary work on AutoTweeter
+**Today's Progress:** Preliminary work on TweetCommit
 
 **Thoughts:** This code is adapted from [TutorialEdge.net](https://tutorialedge.net/golang/writing-a-twitter-bot-golang/) and uses a couple of external libraries. Ultimately I think I'd like to tackle writing something from scratch, but for now I just wanted something that worked.
 
 The **TutorialEdge** code worked by setting your API user tokens as part of your environment--because as author **Elliot Forbes** rightly says, information like that should not be committed to your repository. Since I work on two different home machines at the moment--a desktop and a laptop--I opted instead to save my API tokens in a json file on my home network so that both computers can access them easily.
 
-Tweeting via this code does actually work, but that is only part of what I want it to do. The second step would be for it to read and parse *this* log file, pull out the most recent Day number, project name, and "Today's Progress" blurb, and construct a tweet from those.  However, it should *also* commit (and push) this file to github using the same information. Possibly "AutoTweeter" is a bit of a misnomer, and the repo name may change at some point.
+Tweeting via this code does actually work, but that is only part of what I want it to do. The second step would be for it to read and parse *this* log file, pull out the most recent Day number, project name, and "Today's Progress" blurb, and construct a tweet from those.  However, it should *also* commit (and push) this file to github using the same information. Possibly "AutoTweet" is a bit of a misnomer, and the repo name may change at some point. (Done.)
 
 **Things to Investigate Further:** Go Modules. Also, how best to publish individual Go packages to github so I can use them in multiple projects if required.
 
