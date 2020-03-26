@@ -3,6 +3,7 @@ package tweeter
 import (
 	"fmt"
 
+	"github.com/PJSoftware/AutoTweeter/logdata"
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
 )
@@ -30,7 +31,7 @@ func getClient(creds *credentials) (*twitter.Client, error) {
 }
 
 // TweetHDC adds the #100DaysofCode details around our message, and tweets it
-func TweetHDC(round int, day int, msg string) error {
+func TweetHDC(ld *logdata.LogData) error {
 	creds := newCredentials("PJ_AutoTweeter")
 	client, err := getClient(creds)
 	if err != nil {
@@ -38,14 +39,11 @@ func TweetHDC(round int, day int, msg string) error {
 	}
 	_ = client
 
-	tweet := fmt.Sprintf("#100DaysOfCode #R%dD%d Day %d\n", round, day, day)
-	tweet += msg + "\n"
+	tweet := fmt.Sprintf("#100DaysOfCode #R%dD%d Day %d\n", ld.Round, ld.Day, ld.Day)
+	tweet += ld.Topic + ": " + ld.Desc + "\n"
 	tweet += url
 
-	if testOnly {
-		fmt.Printf("\n=====\nTEST ONLY; nothing will be sent to twitter!\nTweet:\n%s\n=====\n\n", tweet)
-		return nil
-	}
+	fmt.Printf("Tweeting the following:\n%s\n", tweet)
 
 	_, _, err = client.Statuses.Update(tweet, nil)
 	return err
