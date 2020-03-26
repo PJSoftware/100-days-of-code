@@ -8,6 +8,8 @@
 
 **Thoughts:** Of course, until I run my script (renamed TweetCommit.exe in this folder) I won't actually know if it works as intended. That's the joy of code which tweets and/or commits: you don't want to be test-running it a thousand times on potentially live systems.
 
+**Update:** It works!
+
 ## Day 10: March 24, 2020: Tuesday
 
 ### [AutoTweeter](https://github.com/PJSoftware/AutoTweeter) Day 1
