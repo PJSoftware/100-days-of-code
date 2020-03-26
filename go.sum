@@ -1,3 +1,5 @@
+github.com/PJSoftware/AutoTweeter v0.0.0-20200326055435-8fe6959fb591 h1:XLDHZCl535sYq+QxkIelxqwCgAVYPPMMQn1aS/Jz8zU=
+github.com/PJSoftware/AutoTweeter v0.0.0-20200326055435-8fe6959fb591/go.mod h1:qN2xyjg73856AEHJzol/MuR1KX9Jgm5TAmma1lif8sE=
 github.com/cenkalti/backoff v2.1.1+incompatible h1:tKJnvO2kl0zmb/jA5UKAt4VoEVw1qxKWjE/Bpp46npY=
 github.com/cenkalti/backoff v2.1.1+incompatible/go.mod h1:90ReRw6GdpyfrHakVjL/QHaoyV4aDUVVkXQJJJ3NXXM=
 github.com/davecgh/go-spew v1.1.0 h1:ZDRjVQ15GmhC3fiQ8ni8+OwkZQO4DARzQgrnXU1Liz8=

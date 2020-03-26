@@ -2,22 +2,47 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os/exec"
 
 	"github.com/PJSoftware/AutoTweeter/logdata"
-	"github.com/PJSoftware/AutoTweeter/tweeter"
 )
 
 func main() {
-	ld := logdata.NewLogData("log.md")
-
-	gitCommit(ld)
-	err := tweeter.TweetHDC(ld)
-	if err != nil {
-		fmt.Println(err)
-	} else {
-		fmt.Println("Successfully tweeted!")
+	fn := "log.md"
+	if gitUnchanged(fn) {
+		fmt.Println(fn + " has not been modified; cancelling!")
+		return
 	}
+
+	// ld := logdata.NewLogData(fn)
+	// wannaProceed(ld)
+
+	// gitCommit(ld)
+	// err := tweeter.TweetHDC(ld)
+	// if err != nil {
+	// 	fmt.Println(err)
+	// } else {
+	// 	fmt.Println("Successfully tweeted!")
+	// }
+}
+
+func gitUnchanged(fn string) bool {
+	fmt.Printf("Checking '%s'\n", fn)
+	out, err := exec.Command("git", "diff-index", "HEAD", fn).Output()
+	if err != nil {
+		log.Fatal(err)
+	}
+	str := string(out)
+
+	if str == "" {
+		return true
+	}
+	return false
+}
+
+func wannaProceed(ld *logdata.LogData) {
+
 }
 
 func gitCommit(ld *logdata.LogData) {

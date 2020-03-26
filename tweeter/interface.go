@@ -9,7 +9,6 @@ import (
 )
 
 const url string = "https://github.com/PJSoftware/100-days-of-code/blob/master/log.md"
-const testOnly bool = true
 
 func getClient(creds *credentials) (*twitter.Client, error) {
 	config := oauth1.NewConfig(creds.consumerKey, creds.consumerSecret)
