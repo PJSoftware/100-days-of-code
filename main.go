@@ -5,7 +5,8 @@ import (
 	"log"
 	"os/exec"
 
-	"github.com/PJSoftware/AutoTweeter/logdata"
+	"github.com/PJSoftware/TweetCommit/logdata"
+	"github.com/PJSoftware/TweetCommit/tweeter"
 )
 
 func main() {
@@ -15,16 +16,15 @@ func main() {
 		return
 	}
 
-	// ld := logdata.NewLogData(fn)
-	// wannaProceed(ld)
+	ld := logdata.NewLogData(fn)
+	gitCommit(ld)
 
-	// gitCommit(ld)
-	// err := tweeter.TweetHDC(ld)
-	// if err != nil {
-	// 	fmt.Println(err)
-	// } else {
-	// 	fmt.Println("Successfully tweeted!")
-	// }
+	err := tweeter.TweetHDC(ld)
+	if err != nil {
+		fmt.Println(err)
+	} else {
+		fmt.Println("Successfully tweeted!")
+	}
 }
 
 func gitUnchanged(fn string) bool {
@@ -39,10 +39,6 @@ func gitUnchanged(fn string) bool {
 		return true
 	}
 	return false
-}
-
-func wannaProceed(ld *logdata.LogData) {
-
 }
 
 func gitCommit(ld *logdata.LogData) {

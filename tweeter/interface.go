@@ -3,7 +3,7 @@ package tweeter
 import (
 	"fmt"
 
-	"github.com/PJSoftware/AutoTweeter/logdata"
+	"github.com/PJSoftware/TweetCommit/logdata"
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
 )
