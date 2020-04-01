@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 14: April 02, 2020: Thursday
+
+### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Output Revised
+
+**Today's Progress:** Revised output to better explain what is happening.
+
+**Thoughts:** `TweetCommit.exe` is working okay, but it needs a little refinement. It actually *seems* to hang for a while, so I've added output to give a better idea of what is going on. (I *think* I know where the delay is happening, but until I run it with the new output enabled I really don't know for sure!)
+
 ## Day 13: April 1, 2020: Wednesday
 
 ### [Win-Spotlight](https://github.com/PJSoftware/Win-Spotlight) Revisited
