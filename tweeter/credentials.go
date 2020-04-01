@@ -23,6 +23,7 @@ type credentials struct {
 
 func newCredentials(appName string) *credentials {
 	cred := new(credentials)
+	fmt.Printf("Reading '%s' credentials from JSON file\n", appName)
 	jsonFile, err := os.Open(tokensFile)
 	if err != nil {
 		fmt.Println(err)

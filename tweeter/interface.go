@@ -42,7 +42,7 @@ func TweetHDC(ld *logdata.LogData) error {
 	tweet += ld.Topic + ": " + ld.Desc + "\n"
 	tweet += url
 
-	fmt.Printf("Tweeting the following:\n%s\n", tweet)
+	fmt.Printf("Tweeting the following:\n=====\n%s\n=====\n", tweet)
 
 	_, _, err = client.Statuses.Update(tweet, nil)
 	return err

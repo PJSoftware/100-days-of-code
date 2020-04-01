@@ -19,6 +19,7 @@ type LogData struct {
 
 // NewLogData reads specified log file
 func NewLogData(logfn string) *LogData {
+	fmt.Printf("Parsing contents of '%s'\n", logfn)
 	ld := new(LogData)
 	err := ld.parse(logfn)
 	if err != nil {
