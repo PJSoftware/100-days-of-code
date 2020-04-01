@@ -1,6 +1,6 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
-## Day 14: April 02, 2020: Thursday
+## Day 14: April 2, 2020: Thursday
 
 ### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Output Revised
 
@@ -9,6 +9,18 @@
 **Thoughts:** `TweetCommit.exe` is working okay, but it needs a little refinement. It actually *seems* to hang for a while, so I've added output to give a better idea of what is going on. (I *think* I know where the delay is happening, but until I run it with the new output enabled I really don't know for sure!)
 
 **Update:** `git push` is where the biggest delay lies...
+
+### `increment-log.py` Revised
+
+**Thoughts:** I thought there was something in my code which detected an attempt to add a date in the future to the `log.md` file, but apparently there was not.
+
+Now there is:
+
+```python
+    if date > date.today():
+        print("Increment cancelled; new date would be in the future!")
+        return
+```
 
 ## Day 13: April 1, 2020: Wednesday
 

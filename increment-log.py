@@ -22,14 +22,14 @@ def incLog():
 
     rf = open("log.md", "r")
     wf = open("log.md.out", "w")
-    added = False
+    matched = False
 
     for line in rf:
-        if not added:
+        if not matched:
             m = re.match(r"^#+ Day (\d+): (\S+) (\d+), (\d+)", line)
             if m:
                 insertDay(wf, m)
-                added = True
+                matched = True
         wf.write(line)
 
     rf.close()
@@ -40,8 +40,11 @@ def incLog():
 def insertDay(wf, m):
     day = int(m.group(GI.Day.value))
     ds = m.group(GI.MDay.value)+" "+m.group(GI.Month.value)+" "+m.group(GI.Year.value)
-    date = datetime.datetime.strptime(ds, "%d %B %Y")
+    date = datetime.datetime.strptime(ds, "%-d %B %Y")
     date = date + datetime.timedelta(days=1)
+    if date > date.today():
+        print("Increment cancelled; new date would be in the future!")
+        return
 
     h2 = "## Day " + str(day+1) + ": "
     datestr = date.strftime("%B %d, %Y: %A")
