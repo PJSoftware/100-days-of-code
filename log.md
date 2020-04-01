@@ -8,6 +8,8 @@
 
 **Thoughts:** `TweetCommit.exe` is working okay, but it needs a little refinement. It actually *seems* to hang for a while, so I've added output to give a better idea of what is going on. (I *think* I know where the delay is happening, but until I run it with the new output enabled I really don't know for sure!)
 
+**Update:** `git push` is where the biggest delay lies...
+
 ## Day 13: April 1, 2020: Wednesday
 
 ### [Win-Spotlight](https://github.com/PJSoftware/Win-Spotlight) Revisited
