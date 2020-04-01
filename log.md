@@ -1,5 +1,49 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 13: April 1, 2020: Wednesday
+
+### [Win-Spotlight](https://github.com/PJSoftware/Win-Spotlight) Revisited
+
+**Lost Time:** Okay, so I missed a few days between my last coding attempt and now. In that time I watched plenty of NetFlix and did zero coding. (You guys: `#TheOA` is amazing! Check it out!)
+
+**Today's Progress:** Made a quick fix to file naming; added tests and error handling.
+
+#### Wallpaper Naming
+
+`Win-Spotlight` is one of the first things I wrote in Go. It looks for new `Spotlight` images (delivered on the regular by Windows 10) and copies them out of their delivery folder into a specified wallpaper folder. This gave me the opportunity to play with `INI` and `JSON` files in `Go` -- not to mention exploring working with `UTF16`. Plus it gives me a folder full of awesome wallpapers to use on my machine.
+
+It also confirmed, once and for all, that I had to move away from using the old text editor I've been using for the last 18-odd years -- and, honestly, much as I loved it, that has been the best thing I could have done!
+
+I noticed that, despite my efforts to intercept it in the renaming process, some of the files in my wallpaper folder had a doubled-up copyright symbol in their name. I renamed them there, but obviously the only way to truly fix the problem is by curing the illness rather than treating the symptoms. *(Signs that you are living through the **Coronapocalypse**: medical analogies in your log files!)* So my first work for today was to fix up that particular piece of code.
+
+#### Unit Tests
+
+**The Plan:**
+
+So, did my fix actually do what I think it does? How would I know?
+
+As somebody who is mostly self-taught, and who has done most of their coding in isolation\*, I only picked up the concept of `TDD` (Test Driven Development) a couple of years ago. Great idea, loved it, and promptly started applying it (no doubt naively) to my `Perl` programming. It's probably time to work on doing the same in my ongoing `Go` work!
+
+I probably won't write a completely comprehensive test suite today, but I'd at least like to get enough done that I can confirm my new code works as intended.
+
+\* This has shaped much of my approach to coding (obviously) and it will probably come up again!
+
+**Achieved:** I added one unit test for `newFilename()` to ensure that our output is as expected. This enabled me to rewrite the function to be more efficient, and to put all our intended regexp transformations in a table. (I originally coded it as a `map`, but the order of transforms was important to the end result, so I redefined it as a `slice` of `struct`s.)
+
+#### Error Handling
+
+**The Plan:**
+
+As somebody who is mostly self-taught, and who has done most of their coding in isolation\*, my approach to error handling in other languages has been ... minimal. A few years back I ran across the concept of throwing exceptions and letting the calling code catch them if necessary. Plenty of this started creeping into my `Perl` code from that point on.
+
+Of course, `Go` takes error handling in the complete opposite direction, treating errors as values which can be passed back to the calling code, there to be checked or ignored as required -- with the caveat that ignoring them *must* be a deliberate choice rather than a simple oversight. In many ways this is the same logic as throwing an exception: the programmer can choose to either deal with it or ignore it, but they *must* choose. I like it. Even if it does tend to clutter the code...
+
+During my *lost-time* hiatus (I'm just gonna go ahead and blame alien abduction!) I actually did a little reading on error handling in Go. It's something I'll be exploring further, but certainly adding an `Error` type in this code (if I have the time) would be a good start.
+
+\* Told you!
+
+**Achieved:** I fiddled around a bit with an `errors` sub-package, and applied it (very simply) in a few places. At the moment I'm simply lifting it from various online locations; I need to do more thinking about how best to implement it for this application (and/or any other.)
+
 ## Day 12: March 26, 2020: Thursday
 
 ### [TweetCommit (was AutoTweeter)](https://github.com/PJSoftware/TweetCommit) Final Tweak
@@ -33,8 +77,6 @@ The question is, how do we do this in `Go`? Presumably the same way: run `git di
     }
 
 ```
-
-It also occurs to me that a "do you want to proceed?" prompt would be worth adding as a last resort.
 
 ## Day 11: March 25, 2020: Wednesday
 
