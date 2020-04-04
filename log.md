@@ -1,5 +1,15 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 16: April 4, 2020: Saturday
+
+### [Win-Spotlight](https://github.com/PJSoftware/Win-Spotlight) Converted to Module
+
+**Today's Progress:** Still trying to wrap my head around the benefits of `Go` modules.
+
+**Thoughts:** It does seem to make my pathing work a little better--by forcing me to use the github paths to everything. Since I'm also trying to wrap my head around how best to use github to host `Go` packages, this seems to be a step in the right direction.
+
+At the same time, I was wrestling with the fact that `go build` was, by default, creating a `Win-Spotlight.exe` file rather than the preferred `UpdateSpotlight.exe`. I could probably have renamed the repository to fix this, but I opted, instead, to use a `cmd/UpdateSpotlight` folder. This means I now have to `cd` into that folder to build my code, but maybe I'll add a `build.sh` to the parent folder to get around that.
+
 ## Day 15: April 3, 2020: Friday
 
 ### [Log Incrementer increment-log.py](https://github.com/PJSoftware/100-days-of-code/blob/master/increment-log.py) Update 2
