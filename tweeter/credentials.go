@@ -24,7 +24,7 @@ type credentials struct {
 func newCredentials(appName string) *credentials {
 	cred := new(credentials)
 	fmt.Printf("Reading '%s' credentials from JSON file\n", appName)
-	jsonFile, err := os.Open(tokensFile)
+	jsonFile, err := os.Open(chooseTokens())
 	if err != nil {
 		fmt.Println(err)
 		return nil
@@ -37,6 +37,24 @@ func newCredentials(appName string) *credentials {
 
 	parseToken(appName, jsonData["tokens"], cred)
 	return cred
+}
+
+func chooseTokens() string {
+	files := []string{"../Tokens/API/twitter.json"}
+	for _, tf := range files {
+		if fileExists(tf) {
+			return tf
+		}
+	}
+	return tokensFile
+}
+
+func fileExists(filename string) bool {
+	info, err := os.Stat(filename)
+	if os.IsNotExist(err) {
+		return false
+	}
+	return !info.IsDir()
 }
 
 func parseToken(appName, data interface{}, cred *credentials) {
