@@ -40,14 +40,19 @@ def incLog():
 def insertDay(wf, m):
     day = int(m.group(GI.Day.value))
     ds = m.group(GI.MDay.value)+" "+m.group(GI.Month.value)+" "+m.group(GI.Year.value)
-    date = datetime.datetime.strptime(ds, "%-d %B %Y")
+    date = datetime.datetime.strptime(ds, "%d %B %Y")
     date = date + datetime.timedelta(days=1)
     if date > date.today():
         print("Increment cancelled; new date would be in the future!")
         return
 
     h2 = "## Day " + str(day+1) + ": "
-    datestr = date.strftime("%B %d, %Y: %A")
+    datestr1 = date.strftime("%B")
+    datestr2 = date.strftime("%d, %Y: %A")
+    if datestr2[:1] == "0":
+        datestr2 = datestr2[1:]
+    
+    datestr = datestr1 + " " + datestr2
     h2 = h2 + datestr
 
     print("Adding Day", day+1, "stub [" + datestr + "]")
