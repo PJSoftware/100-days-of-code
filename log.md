@@ -1,5 +1,17 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 15: April 3, 2020: Friday
+
+### [Log Incrementer increment-log.py](https://github.com/PJSoftware/100-days-of-code/blob/master/increment-log.py) Update 2
+
+**Today's Progress:** Fixed the formatting of the date
+
+**Thoughts:** While making my last tweak of `increment-log.py`, I spent a little time looking for a formatting code to use with `strftime` which would *not* zero-pad the day of the month. I found something online which told me I could use `%-d` instead of `%d`. Turns out this was not correct--and because that particular line of code is only interpreted at runtime, I would not find out until I tried to run the script today.
+
+To get the format I actually wanted, I had to specifically check for the leading zero and remove it.
+
+To ensure this does not happen again--well, I guess it's time to look into unit testing in Python!
+
 ## Day 14: April 2, 2020: Thursday
 
 ### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Output Revised
