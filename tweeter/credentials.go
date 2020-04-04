@@ -23,8 +23,9 @@ type credentials struct {
 
 func newCredentials(appName string) *credentials {
 	cred := new(credentials)
-	fmt.Printf("Reading '%s' credentials from JSON file\n", appName)
-	jsonFile, err := os.Open(chooseTokens())
+	tf := chooseTokens()
+	fmt.Printf("Reading '%s' credentials from '%s'\n", appName, tf)
+	jsonFile, err := os.Open(tf)
 	if err != nil {
 		fmt.Println(err)
 		return nil
@@ -35,7 +36,7 @@ func newCredentials(appName string) *credentials {
 	var jsonData map[string]interface{}
 	json.Unmarshal([]byte(byteValue), &jsonData)
 
-	parseToken(appName, jsonData["tokens"], cred)
+	cred.parseToken(appName, jsonData["tokens"])
 	return cred
 }
 
@@ -57,7 +58,7 @@ func fileExists(filename string) bool {
 	return !info.IsDir()
 }
 
-func parseToken(appName, data interface{}, cred *credentials) {
+func (cred *credentials) parseToken(appName, data interface{}) {
 	for _, token := range data.([]interface{}) {
 		tm := token.(map[string]interface{})
 		if tm["name"] == appName {
