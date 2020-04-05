@@ -8,11 +8,26 @@ import (
 	"github.com/dghubble/oauth1"
 )
 
-const url string = "https://github.com/PJSoftware/100-days-of-code/blob/master/log.md"
+const twitterApp string = "PJ_AutoTweeter"
 
-func getClient(creds *credentials) (*twitter.Client, error) {
-	config := oauth1.NewConfig(creds.consumerKey, creds.consumerSecret)
-	token := oauth1.NewToken(creds.accessToken, creds.accessSecret)
+// Tweeter is our struct of critical data
+type Tweeter struct {
+	client *twitter.Client
+	cred   *credentials
+	Err    error
+}
+
+// NewTweeter sets up our twitter interface
+func NewTweeter() *Tweeter {
+	tw := new(Tweeter)
+	tw.cred = newCredentials(twitterApp)
+	tw.getClient()
+	return tw
+}
+
+func (tw *Tweeter) getClient() {
+	config := oauth1.NewConfig(tw.cred.consumerKey, tw.cred.consumerSecret)
+	token := oauth1.NewToken(tw.cred.accessToken, tw.cred.accessSecret)
 
 	httpClient := config.Client(oauth1.NoContext, token)
 	client := twitter.NewClient(httpClient)
@@ -24,26 +39,22 @@ func getClient(creds *credentials) (*twitter.Client, error) {
 
 	_, _, err := client.Accounts.VerifyCredentials(verifyParams)
 	if err != nil {
-		return nil, err
+		tw.Err = err
+		return
 	}
-	return client, nil
+	tw.client = client
 }
 
-// TweetHDC adds the #100DaysofCode details around our message, and tweets it
-func TweetHDC(ld *logdata.LogData) error {
-	creds := newCredentials("PJ_AutoTweeter")
-	client, err := getClient(creds)
-	if err != nil {
-		return fmt.Errorf("Could not initialise twitter client: %w", err)
-	}
-	_ = client
+const url string = "https://github.com/PJSoftware/100-days-of-code/blob/master/log.md"
 
+// TweetHDC adds the #100DaysofCode details around our message, and tweets it
+func (tw *Tweeter) TweetHDC(ld *logdata.LogData) error {
 	tweet := fmt.Sprintf("#100DaysOfCode #R%dD%d Day %d\n", ld.Round, ld.Day, ld.Day)
 	tweet += ld.Topic + ": " + ld.Desc + "\n"
 	tweet += url
 
 	fmt.Printf("Tweeting the following:\n=====\n%s\n=====\n", tweet)
 
-	_, _, err = client.Statuses.Update(tweet, nil)
+	_, _, err := tw.client.Statuses.Update(tweet, nil)
 	return err
 }

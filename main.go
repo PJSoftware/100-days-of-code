@@ -17,14 +17,19 @@ func main() {
 	}
 
 	ld := logdata.NewLogData(fn)
-	gitCommit(ld)
+	tw := tweeter.NewTweeter()
+	if tw.Err != nil {
+		fmt.Printf("Error initialising Twitter: %v\n", tw.Err)
+	}
 
-	err := tweeter.TweetHDC(ld)
+	err := tw.TweetHDC(ld)
 	if err != nil {
 		fmt.Println(err)
-	} else {
-		fmt.Println("Successfully tweeted!")
+		return
 	}
+
+	fmt.Println("Successfully tweeted!")
+	gitCommit(ld)
 }
 
 func gitUnchanged(fn string) bool {

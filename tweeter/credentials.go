@@ -7,7 +7,8 @@ import (
 	"os"
 )
 
-const tokensFile string = "//PERSONALCLOUD/Public/Tokens/API/twitter.json"
+const tokensPath string = "//PERSONALCLOUD/Public"
+const tokensFile string = "Tokens/API/twitter.json"
 
 type token struct {
 	Name  string        `json:"name"`
@@ -24,6 +25,11 @@ type credentials struct {
 func newCredentials(appName string) *credentials {
 	cred := new(credentials)
 	tf := chooseTokens()
+	if tf == "" {
+		fmt.Println("No credential files located")
+		return nil
+	}
+
 	fmt.Printf("Reading '%s' credentials from '%s'\n", appName, tf)
 	jsonFile, err := os.Open(tf)
 	if err != nil {
@@ -41,13 +47,14 @@ func newCredentials(appName string) *credentials {
 }
 
 func chooseTokens() string {
-	files := []string{"../Tokens/API/twitter.json"}
-	for _, tf := range files {
+	paths := []string{"..", tokensPath}
+	for _, tp := range paths {
+		tf := tp + "/" + tokensFile
 		if fileExists(tf) {
 			return tf
 		}
 	}
-	return tokensFile
+	return ""
 }
 
 func fileExists(filename string) bool {
