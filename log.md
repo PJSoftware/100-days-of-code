@@ -1,5 +1,15 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 17: April 5, 2020: Sunday
+
+### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Code Structure Refined
+
+**Today's Progress:** Made the code more oop-oriented.
+
+**Thoughts:** This was mostly a reorganisation of code to allow all the possible errors to be triggered *before* any non-reversible action has occurred. Making the `tweeter` package OO allowed me to easily split the init code from the tweeting code.
+
+At the same time I moved the `main.go` file into a `cmd/TweetCommit` folder (as per yesterday's `Win-Spotlight` update) and added a `publish.sh` shell script to simplify building the `exe` file and copying it out to where it is needed. (Possibly a symlink would make more sense ... but we *are* still working on a Windows machine, even if we're currently using `git bash` to get around. A shortcut, maybe? I'll do some testing...)
+
 ## Day 16: April 4, 2020: Saturday
 
 ### [Win-Spotlight](https://github.com/PJSoftware/Win-Spotlight) Converted to Module
