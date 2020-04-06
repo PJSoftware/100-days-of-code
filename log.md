@@ -1,5 +1,19 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 18: April 6, 2020: Monday
+
+### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 10
+
+**Today's Progress:** Refactored my first three solvers, and my cell collection code.
+
+**Thoughts:** I actually got quite a bit done, without making any actual progress! Because I *know* that the fourth solver is going to be complicated to write, I decided, first off, to split each solver into its own `.go` file. In the process of doing this, I discovered that I no longer remembered how `solver03` works, and the code did *not* clarify anything. Because it now lived in its own file, it was much easier to refactor it in an attempt to make the code more readable.
+
+This, of course, led to the solver breaking! I added a bunch of debugging print statements using the existing `showWorking` mechanism, and discovered that during the refactoring process I had managed to drop an important `else`. I fixed that up, and then decided that it made more sense for my `s3` to have its own independent `showWorking` code. More importantly, this then set the precedent for `s4` to be a lot more organised and easy to keep track of what I'm doing as I write it.
+
+The entire process took longer than it should have, and involved a great wailing and gnashing of teeth, but it had the important result that my solver code, which was rapidly becoming cumbersome and monolithic, is now a lot more flexible, and as I move forward with more solvers, this will allow me a lot more flexibility to do whatever I need to achieve the required result.
+
+Finally--or rather, initially, because it was one of the first things I did--I moved the `cellCollections` back into the `Grid` struct (where they originally existed before I broke them out!) I am pretty sure that in order to write `solver04` I will need to create duplicates of the current state of the data, and this will be easier if I just need to copy the Grid and don't have to also juggle independent collections.
+
 ## Day 17: April 5, 2020: Sunday
 
 ### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Code Structure Refined
