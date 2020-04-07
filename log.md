@@ -1,5 +1,19 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 19: April 7, 2020: Tuesday
+
+### [gotokens package](https://github.com/PJSoftware/gotokens) Preliminary version
+
+**Today's Progress:** Developed my first github-hosted standalone Go package, for use with TweetCommit (among others.)
+
+**Thoughts:** This was quite a heavy day, full of steep learning curves. Among my achievements:
+
+* Relocated the development of the package to the relevant path (`src/github.com/pjsoftware`) of my `$GOPATH` folder. Up until now I've been working elsewhere because, well, because I come from a non-Go, non-git, primarily Windows background, and all of my development until recently has been within my SVN working folder tree. When I fully embraced the beauty (and horror) of `git` on the command line (for a while I was using `svn` to keep my `github` repository up to date; it works, but it is definitely *sub-optimal*!) I created myself a git working folder! (Hey, if it works...!)
+* Developed a standalone package intended to be sourced via github. No doubt there are things missing--a *licence*, for instance--but I figured it was time to work out how to make this work, and the best way to learn is to do. One of the big decisions I had to make was what to call the repository. While I'm currently focussing heavily on `Go`, I *will* be playing with other languages too, so I ultimately opted for the 'go' prefix to the name. My first impulse was to do something like 'gopackages/tokens', but it seems `git` does not really handle (or allow) subrepositories such as I would have used with `svn`. (Comparing the two, `git` has both advantages and disadvantages vs `svn`!)
+* Built a full error handling system within the package. Back on **Day 13** I made a preliminary foray into the wonders of extended error handling in `Go`. However, I was tacking it onto existing code, so it was a shoddy attempt at best--and I just did not *grok* it. Having built it in from the ground up, I think I have a much better idea of what it can do, and how to use it properly.
+* Full unit testing was not only added after the fact, but built alongside my code from the ground up. This helped me find a few errors which I would otherwise never have detected until tomorrow--or, y'know, months down the road.
+* I gained a huge appreciation for just how productive `VSCode` can be when developing and, specifically, testing `Go` code. I'd already discovered how much better a modern `IDE` could be than the old, simple syntax-highlighting editor I had been using for so long. Full code completion, syntax error detection, all those awesome things are great--and `Go` even specifies the formatting to use, so having it reformat your code as you go just eliminates the old formatting arguments/decisions. (They never really affected me when I was happily working in isolation, but I was always aware of them.) **Also**, when running your package tests from inside the editor, `VSCode` not only tells you the percentage of code coverage you have achieved, it also highlights the code that has and has not actually been tested! Invaluable!
+
 ## Day 18: April 6, 2020: Monday
 
 ### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 10
