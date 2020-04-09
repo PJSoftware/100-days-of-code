@@ -1,5 +1,23 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 20: April 8, 2020: Wednesday
+
+### [pdfill package](https://github.com/PJSoftware/gotokens) Bare Bones Edition
+
+**Today's Progress:** Worked on, among other things, a Go interface to the command line of PDFill, a PDF Tools program.
+
+**Thoughts:** I've been a user of PDFill Free PDF Tools for years. Registering the full package gives you access to the command line options--or rather, you have access without registering; registering removes the "PDFill" text it inserts when using the command line tools with the free version!
+
+I bought the full version of PDFill years ago, because I needed the ability to automate merging multiple PDFs into one. Back then I wrote a simple `Perl` library to give me that capability. Now, I need the ability to split PDFs into their individual pages; rather than extend the existing code I've decided to do it in `Go`, because:
+
+* Well, why not?
+* It's what I'm focussing on at the moment.
+* I really need to create a compiled executable.
+
+The full program I'm working on is *hopefully* for work--as in, I may end up getting a job out of this--so I won't be making it public, but the `pdfill` package itself will be quite straightforward; anybody who wants to go and register the (excellent) [PDFill Editor](https://www.pdfill.com/) and read their command line options page would be able to cobble together something similar.
+
+Currently it's very bare-bones, but I'm building in testing as I go. Attempting to, anyway. I'll probably never cover the full range of PDFill commands available ... but I'll see how I go.
+
 ## Day 19: April 7, 2020: Tuesday
 
 ### [gotokens package](https://github.com/PJSoftware/gotokens) Preliminary version
