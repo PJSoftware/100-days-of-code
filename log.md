@@ -1,8 +1,14 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 21: April 9, 2020: Thursday
+
+### [pdfill package](https://github.com/PJSoftware/pdfill) Split() Functionality Complete
+
+**Today's Progress:** Split() is now fully working, fully tested (well, 92.6% tested; not sure how to test the internal error code!)
+
 ## Day 20: April 8, 2020: Wednesday
 
-### [pdfill package](https://github.com/PJSoftware/gotokens) Bare Bones Edition
+### [pdfill package](https://github.com/PJSoftware/pdfill) Bare Bones Edition
 
 **Today's Progress:** Worked on, among other things, a Go interface to the command line of PDFill, a PDF Tools program.
 
