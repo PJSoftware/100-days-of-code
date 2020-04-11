@@ -6,7 +6,6 @@ import (
 	"github.com/PJSoftware/TweetCommit/logdata"
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
-	"github.com/pjsoftware/gotokens"
 )
 
 const twitterApp string = "PJ_AutoTweeter"
@@ -20,39 +19,18 @@ type Tweeter struct {
 // NewTweeter sets up our twitter interface
 func NewTweeter() *Tweeter {
 	tw := new(Tweeter)
-
-	gotokens.SetSearchPath([]string{"C:", "Z:"})
-	tks, err := gotokens.ImportTokens("API/twitter.json")
+	cr, err := GetCredentials("API/twitter.json", "PJ_AutoTweeter")
 	if err != nil {
 		tw.Err = err
-		return nil
+		return tw
 	}
-	tk, err := tks.Select("PJ_AutoTweeter")
-	if err != nil {
-		tw.Err = err
-		return nil
-	}
-
-	ck, e1 := tk.Credential("CONSUMER_KEY")
-	cs, e2 := tk.Credential("CONSUMER_SECRET")
-	at, e3 := tk.Credential("ACCESS_TOKEN")
-	as, e4 := tk.Credential("ACCESS_TOKEN_SECRET")
-	if e1 != nil || e2 != nil || e3 != nil || e4 != nil {
-		tw.Err = &gotokens.Error{
-			Code:    gotokens.EBADCREDENTIAL,
-			Message: "Credential unrecognised",
-		}
-		return nil
-	}
-
-	config := oauth1.NewConfig(ck, cs)
-	token := oauth1.NewToken(at, as)
-	tw.getClient(config, token)
-
+	tw.getClient(cr)
 	return tw
 }
 
-func (tw *Tweeter) getClient(config *oauth1.Config, token *oauth1.Token) {
+func (tw *Tweeter) getClient(cr *Credentials) {
+	config := oauth1.NewConfig(cr.ConsKey, cr.ConsSec)
+	token := oauth1.NewToken(cr.AccTok, cr.AccTokSec)
 	httpClient := config.Client(oauth1.NoContext, token)
 	client := twitter.NewClient(httpClient)
 
@@ -73,7 +51,7 @@ const url string = "https://github.com/PJSoftware/100-days-of-code/blob/master/l
 
 // TweetHDC adds the #100DaysofCode details around our message, and tweets it
 func (tw *Tweeter) TweetHDC(ld *logdata.LogData) error {
-	tweet := fmt.Sprintf("#100DaysOfCode #R%dD%d Day %d\n", ld.Round, ld.Day, ld.Day)
+	tweet := fmt.Sprintf("Day %d of #100DaysOfCode\n", ld.Day)
 	tweet += ld.Topic + ": " + ld.Desc + "\n"
 	tweet += url
 
@@ -82,3 +60,5 @@ func (tw *Tweeter) TweetHDC(ld *logdata.LogData) error {
 	_, _, err := tw.client.Statuses.Update(tweet, nil)
 	return err
 }
+
+// ✔️
