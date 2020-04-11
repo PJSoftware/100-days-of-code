@@ -6,7 +6,7 @@
 
 **Today's Progress:** Revised the regexp, added testing, refactored the credential code.
 
-**Thoughts:** When you have a regexp which looks like `^[#]{3} [[]\([^]]+)[]][(][^)]+[)]\s*(\S.+)?$` (which I shall have to re-edit in this log once it goes up on GitHub because of the MD interpretation) in a program which runs once a day and posts its results for the world to see, if you are changing that regexp you kinda want to be able to test the results before you go live. (I know. I should use `/x` to make my regular expressions more readable, but I still have difficulty wrapping my head around how to best format a regexp/x!) I refactored my various regular expressions into a separate function so I could better test them--and sure enough, my revised version was broken. Having the unit test made it much easier to fix the problem and be sure it was working as intended.
+**Thoughts:** When you have a regexp which looks like `^[#]{3} [[]([^]]+)[]][(][^)]+[)]\s*(\S.+)?$` in a program which runs once a day and posts its results for the world to see, if you are changing that regexp you kinda want to be able to test the results before you go live. (I know. I should use `/x` to make my regular expressions more readable, but I still have difficulty wrapping my head around how to best format a regexp/x!) I refactored my various regular expressions into a separate function so I could better test them--and sure enough, my revised version was broken. Having the unit test made it much easier to fix the problem and be sure it was working as intended.
 
 I also rewrote/refactored the credential handling code. Linking in my gotokens code was a good thing to do, but the way I'd done it was a little awkward.
 
