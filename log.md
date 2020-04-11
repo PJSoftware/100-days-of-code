@@ -48,6 +48,8 @@ Currently it's very bare-bones, but I'm building in testing as I go. Attempting 
 * Full unit testing was not only added after the fact, but built alongside my code from the ground up. This helped me find a few errors which I would otherwise never have detected until tomorrow--or, y'know, months down the road.
 * I gained a huge appreciation for just how productive `VSCode` can be when developing and, specifically, testing `Go` code. I'd already discovered how much better a modern `IDE` could be than the old, simple syntax-highlighting editor I had been using for so long. Full code completion, syntax error detection, all those awesome things are great--and `Go` even specifies the formatting to use, so having it reformat your code as you go just eliminates the old formatting arguments/decisions. (They never really affected me when I was happily working in isolation, but I was always aware of them.) **Also**, when running your package tests from inside the editor, `VSCode` not only tells you the percentage of code coverage you have achieved, it also highlights the code that has and has not actually been tested! Invaluable!
 
+### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Revised to use gotokens
+
 ## Day 18: April 6, 2020: Monday
 
 ### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 10
