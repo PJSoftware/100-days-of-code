@@ -1,5 +1,15 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 23: April 12, 2020: Sunday
+
+### [Win-Spotlight](https://github.com/PJSoftware/Win-Spotlight) Added DeleteDuplicate Command
+
+**Today's Progress:** I refactored the codebase for `UpdateSpotlight.exe` so that I could add `DeleteDuplicate.exe` while reusing common code.
+
+**Thoughts:** Because my first version of `UpdateSpotlight` did not have the ability to read the metadata files, I have numerous Spotlight wallpapers which do not match the current naming convention. I decided the best thing to do at the time was to move all the old ones into a subfolder and worry about them later.
+
+Later is now, more or less. `DeleteDuplicates` compares the Spotlight Wallpaper folder with the Spotlight Wallpaper Archive folder and, well, deletes duplicates. The first pass deleted perhaps 8 or 10 duplicated images. Because I maintain the folder in question under SVN, I then added the "SVN-Rename" option so that any new duplicates discovered (which must be due to new incoming images) will be renamed out of archive rather than deleted and created. This is more efficient for SVN to handle.
+
 ## Day 22: April 11, 2020: Saturday
 
 ### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Regexp Fixed
