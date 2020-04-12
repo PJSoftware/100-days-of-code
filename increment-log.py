@@ -15,6 +15,9 @@ class GI(Enum):
     Year = 4
     
 def incLog():
+    print "Retrieving latest code from remote origin"
+    subprocess.run(['git', 'pull'])
+    
     gs = subprocess.run(['git', 'diff-index', 'master', 'log.md'], stdout=subprocess.PIPE)
     if gs.stdout != b'':
         print("log.md has uncommitted changes; ignoring")
