@@ -1,5 +1,17 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 24: April 13, 2020: Monday
+
+### [CSS Grid Tutorial(s)](https://github.com/PJSoftware/tut-web-cssgrid) Via YouTube
+
+**Today's Progress:** Today I happened across a YouTube tutorial on CSS Grid, and decided to follow along.
+
+**Thoughts:** I already had a vague knowledge of CSS Grid, but this tutorial was well worth working through. I learned about the Grid model, and a few things about `VSCode`!
+
+A second tutorial popped out of YouTube once I had finished the first, and I decided to give it a go too. Sadly, while I definitely learned a few things, I was just not happy with the end results (or, indeed, the design we were attempting to duplicate!)
+
+But hey, yay Grid! (Note: the second tutorial did not use Grid anyway!)
+
 ## Day 23: April 12, 2020: Sunday
 
 ### [Win-Spotlight](https://github.com/PJSoftware/Win-Spotlight) Added DeleteDuplicate Command
