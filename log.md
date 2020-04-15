@@ -1,8 +1,16 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 26: April 15, 2020: Wednesday
+
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/DrAngelaYu/2020WebDevBootcamp/Sections/03--Intermediate%20HTML) Day 2
+
+**Today's Progress:** Intermediate HTML. I am actually learning a few things which have changed since I last played with HTML.
+
+**Thoughts:** For anyone checking out these links, I plan to use **one** github repository for **all** my Udemy tutorial work. I have a number of lessons stacked up that I have just not had time to play with. I guess there's nothing like a global shutdown for freeing up some time! Sadly (\*ahem\*) I am actually busy (as mentioned below) with a project which I *hope* will turn into an actual paid job sometime soon, so I can't spend all my time on this ... but a section a day seems reasonable!
+
 ## Day 25: April 14, 2020: Tuesday
 
-### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/DrAngelaYu/2020WebDevBootcamp) Day 1
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/DrAngelaYu/2020WebDevBootcamp/Sections/02--Intro%20to%20HTML) Day 1
 
 **Today's Progress:** Started at the very beginning: Intro to HTML. Refreshing out-of-date knowledge.
 
