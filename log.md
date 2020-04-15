@@ -1,5 +1,15 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 25: April 14, 2020: Tuesday
+
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/DrAngelaYu/2020WebDevBootcamp) Day 1
+
+**Today's Progress:** Started at the very beginning: Intro to HTML. Refreshing out-of-date knowledge.
+
+**Thoughts:** I already know a fair bit of HTML and CSS, but I'm a little rusty -- and putting those topics together with all the other topics covered in this course, with a focus on modern technologies (my HTML/CSS knowledge is a few years out of date) made it a no-brainer to pick up on Udemy.
+
+I have also been working on a project I can't really discuss in public, so there's that!
+
 ## Day 24: April 13, 2020: Monday
 
 ### [CSS Grid Tutorial(s)](https://github.com/PJSoftware/tut-web-cssgrid) Via YouTube
