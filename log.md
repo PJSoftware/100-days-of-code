@@ -1,8 +1,16 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 27: April 16, 2020: Thursday
+
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/DrAngelaYu/2020WebDevBootcamp/Sections/04-Intro_to_CSS) Day 3
+
+**Today's Progress:** Intro to CSS. CSS is cool. I've loved it since I first discovered it.
+
+**Thoughts:** Is [CSS Zen Garden](http://csszengarden.com/214) still a thing? (Yes. Yes it is. Although it seems a couple of older links are broken...) That site, more than anything, convinced me that CSS was the way to go. If you haven't already, go check it out.
+
 ## Day 26: April 15, 2020: Wednesday
 
-### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/DrAngelaYu/2020WebDevBootcamp/Sections/03--Intermediate%20HTML) Day 2
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/DrAngelaYu/2020WebDevBootcamp/Sections/03-Intermediate_HTML) Day 2
 
 **Today's Progress:** Intermediate HTML. I am actually learning a few things which have changed since I last played with HTML.
 
@@ -10,7 +18,7 @@
 
 ## Day 25: April 14, 2020: Tuesday
 
-### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/DrAngelaYu/2020WebDevBootcamp/Sections/02--Intro%20to%20HTML) Day 1
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/DrAngelaYu/2020WebDevBootcamp/Sections/02-Intro_to_HTML) Day 1
 
 **Today's Progress:** Started at the very beginning: Intro to HTML. Refreshing out-of-date knowledge.
 
