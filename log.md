@@ -2,7 +2,7 @@
 
 ## Day 27: April 16, 2020: Thursday
 
-### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/Sections/04-Intro_to_CSS) Day 3
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/04-Intro_to_CSS) Day 3
 
 **Today's Progress:** Intro to CSS. CSS is cool. I've loved it since I first discovered it.
 
@@ -10,7 +10,7 @@
 
 ## Day 26: April 15, 2020: Wednesday
 
-### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-tuts/tree/master/Sections/03-Intermediate_HTML) Day 2
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/03-Intermediate_HTML) Day 2
 
 **Today's Progress:** Intermediate HTML. I am actually learning a few things which have changed since I last played with HTML.
 
