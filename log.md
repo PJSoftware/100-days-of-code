@@ -1,5 +1,15 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 29: April 18, 2020: Saturday
+
+### [Confidential Golang Project](https://github.com/PJSoftware/100-days-of-code) Day 1
+
+**Today's Progress:** Spent a full day banging out Go code: goroutines, channels, all the fun stuff!
+
+**Thoughts:** I can't discuss the details here, but suffice it to say, I am happy with my progress so far, and I've learned a lot about Concurrent programming, something I'd never really tackled before!
+
+Oh yeah, and I also started to look at the **Bootstrap 4** section of the WebDev Bootcamp -- but more on that when I get time!
+
 ## Day 28: April 17, 2020: Friday
 
 ### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/04-Intro_to_CSS) Day 4
