@@ -1,5 +1,15 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 28: April 17, 2020: Friday
+
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/04-Intro_to_CSS) Day 4
+
+**Today's Progress:** Intermediate CSS. Also played with "Intro to HTML" in FrontEnd Masters' Bootcamp.
+
+**Thoughts:** There were reasons I started looking at the FEM Bootcamp today. I'm not convinced that doing so was such a great idea though. I started getting bored--not because of the quality of the course, *per se*, but because it was mostly covering stuff I'd only just covered. I think I shall focus on just the one course at a time from now on.
+
+And next up ... **Bootstrap 4** *WTFisBS4*? I feel like I've heard of it, and I *want* to dive in--but for the next couple of days I'm actually really busy doing programming work I can't talk about here. I've got a lot to do and not much time to get it done, so I may be skipping a couple of days. We'll see...
+
 ## Day 27: April 16, 2020: Thursday
 
 ### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/04-Intro_to_CSS) Day 3
