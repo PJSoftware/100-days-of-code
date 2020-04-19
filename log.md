@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 30: April 19, 2020: Sunday
+
+### [Confidential Golang Project](https://github.com/PJSoftware/100-days-of-code) Day 2
+
+**Today's Progress:** More of the same -- and basically two 14-hour days! I need sleep.
+
+**Thoughts:** It should work ... but I'll find that out tomorrow morning!
+
 ## Day 29: April 18, 2020: Saturday
 
 ### [Confidential Golang Project](https://github.com/PJSoftware/100-days-of-code) Day 1
