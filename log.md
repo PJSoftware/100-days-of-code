@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 31: April 20, 2020: Monday
+
+### [Confidential Golang Project](https://github.com/PJSoftware/100-days-of-code) Day 3
+
+**Today's Progress:** After many hours of beating my head against the brick wall of my confusion (and some frenzied doc-writing) I think I know what I'm doing!
+
+**Thoughts:** I guess we'll find out!
+
 ## Day 30: April 19, 2020: Sunday
 
 ### [Confidential Golang Project](https://github.com/PJSoftware/100-days-of-code) Day 2
