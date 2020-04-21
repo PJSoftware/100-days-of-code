@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 32: April 21, 2020: Tuesday
+
+### [Confidential Golang Project](https://github.com/PJSoftware/100-days-of-code) Day 4
+
+**Today's Progress:** Finished for now. Plenty more to do, but the proof-of-concept works (rather well, IMHO!)
+
+**Thoughts:** Next up? Make it pretty, change the comms, etc. Plenty more to learn! I think after several variations, various *iterations*, I've come up with the optimal configuration of goroutines and channel communications--until we enter the next phase, anyway.
+
 ## Day 31: April 20, 2020: Monday
 
 ### [Confidential Golang Project](https://github.com/PJSoftware/100-days-of-code) Day 3
