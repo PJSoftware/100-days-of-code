@@ -1,5 +1,17 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 33: April 22, 2020: Wednesday
+
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/06-Intro_to_Bootstrap4) Day 5
+
+**Today's Progress:** I think this is the first time I've used a CSS framework. Definitely the first time I've dug deeply.
+
+**Thoughts:** I got so keen I dipped into the next section: **Intermediate Bootstrap**. Will continue with it until bedtime. Interesting stuff ... and basically, I guess your choice of framework depends a lot on what features it has that you want.
+
+🤔
+
+Maybe I should look into which other frameworks are available and/or popular!
+
 ## Day 32: April 21, 2020: Tuesday
 
 ### [Confidential Golang Project](https://github.com/PJSoftware/100-days-of-code) Day 4
