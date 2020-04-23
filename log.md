@@ -1,5 +1,17 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 34: April 23, 2020: Thursday
+
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/07-IntermediateBootstrap) Day 6
+
+**Today's Progress:** Bootstrap completed; looking forward to getting into JavaScript!
+
+**Thoughts:** The final part of this section involved refactoring, which ... I actually had a few issues with the structure of the HTML itself; I figured the sample site had bigger issues. And I'd been partially refactoring along the way (and using CSS variables, which I love.)
+
+Mostly, though, I think I was keen to get past the section and get my teeth into JavaScript.
+
+I ... working through the last couple of sections have actually given me a few ideas for a personal website I want to work on. I kinda suspect I'll need JS to fully achieve what I have in mind -- not to mention a bit of artistic ability that I don't necessarily have! Torn by new interests: story of my life. I also have new work to do on the project that shall not be named, so there's that.
+
 ## Day 33: April 22, 2020: Wednesday
 
 ### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/06-Intro_to_Bootstrap4) Day 5
@@ -18,7 +30,7 @@ Maybe I should look into which other frameworks are available and/or popular!
 
 **Today's Progress:** Finished for now. Plenty more to do, but the proof-of-concept works (rather well, IMHO!)
 
-**Thoughts:** Next up? Make it pretty, change the comms, etc. Plenty more to learn! I think after several variations, various *iterations*, I've come up with the optimal configuration of goroutines and channel communications--until we enter the next phase, anyway.
+**Thoughts:** Next up? Make it pretty, change the comms, etc. Plenty more to learn! I think after several variations, various _iterations_, I've come up with the optimal configuration of goroutines and channel communications--until we enter the next phase, anyway.
 
 ## Day 31: April 20, 2020: Monday
 
@@ -52,9 +64,9 @@ Oh yeah, and I also started to look at the **Bootstrap 4** section of the WebDev
 
 **Today's Progress:** Intermediate CSS. Also played with "Intro to HTML" in FrontEnd Masters' Bootcamp.
 
-**Thoughts:** There were reasons I started looking at the FEM Bootcamp today. I'm not convinced that doing so was such a great idea though. I started getting bored--not because of the quality of the course, *per se*, but because it was mostly covering stuff I'd only just covered. I think I shall focus on just the one course at a time from now on.
+**Thoughts:** There were reasons I started looking at the FEM Bootcamp today. I'm not convinced that doing so was such a great idea though. I started getting bored--not because of the quality of the course, _per se_, but because it was mostly covering stuff I'd only just covered. I think I shall focus on just the one course at a time from now on.
 
-And next up ... **Bootstrap 4** *WTFisBS4*? I feel like I've heard of it, and I *want* to dive in--but for the next couple of days I'm actually really busy doing programming work I can't talk about here. I've got a lot to do and not much time to get it done, so I may be skipping a couple of days. We'll see...
+And next up ... **Bootstrap 4** _WTFisBS4_? I feel like I've heard of it, and I _want_ to dive in--but for the next couple of days I'm actually really busy doing programming work I can't talk about here. I've got a lot to do and not much time to get it done, so I may be skipping a couple of days. We'll see...
 
 ## Day 27: April 16, 2020: Thursday
 
@@ -70,7 +82,7 @@ And next up ... **Bootstrap 4** *WTFisBS4*? I feel like I've heard of it, and I 
 
 **Today's Progress:** Intermediate HTML. I am actually learning a few things which have changed since I last played with HTML.
 
-**Thoughts:** For anyone checking out these links, I plan to use **one** github repository for **all** my Udemy tutorial work. I have a number of lessons stacked up that I have just not had time to play with. I guess there's nothing like a global shutdown for freeing up some time! Sadly (\*ahem\*) I am actually busy (as mentioned below) with a project which I *hope* will turn into an actual paid job sometime soon, so I can't spend all my time on this ... but a section a day seems reasonable!
+**Thoughts:** For anyone checking out these links, I plan to use **one** github repository for **all** my Udemy tutorial work. I have a number of lessons stacked up that I have just not had time to play with. I guess there's nothing like a global shutdown for freeing up some time! Sadly (\*ahem\*) I am actually busy (as mentioned below) with a project which I _hope_ will turn into an actual paid job sometime soon, so I can't spend all my time on this ... but a section a day seems reasonable!
 
 ## Day 25: April 14, 2020: Tuesday
 
@@ -130,11 +142,11 @@ I also rewrote/refactored the credential handling code. Linking in my gotokens c
 
 I bought the full version of PDFill years ago, because I needed the ability to automate merging multiple PDFs into one. Back then I wrote a simple `Perl` library to give me that capability. Now, I need the ability to split PDFs into their individual pages; rather than extend the existing code I've decided to do it in `Go`, because:
 
-* Well, why not?
-* It's what I'm focussing on at the moment.
-* I really need to create a compiled executable.
+- Well, why not?
+- It's what I'm focussing on at the moment.
+- I really need to create a compiled executable.
 
-The full program I'm working on is *hopefully* for work--as in, I may end up getting a job out of this--so I won't be making it public, but the `pdfill` package itself will be quite straightforward; anybody who wants to go and register the (excellent) [PDFill Editor](https://www.pdfill.com/) and read their command line options page would be able to cobble together something similar.
+The full program I'm working on is _hopefully_ for work--as in, I may end up getting a job out of this--so I won't be making it public, but the `pdfill` package itself will be quite straightforward; anybody who wants to go and register the (excellent) [PDFill Editor](https://www.pdfill.com/) and read their command line options page would be able to cobble together something similar.
 
 Currently it's very bare-bones, but I'm building in testing as I go. Attempting to, anyway. I'll probably never cover the full range of PDFill commands available ... but I'll see how I go.
 
@@ -146,11 +158,11 @@ Currently it's very bare-bones, but I'm building in testing as I go. Attempting 
 
 **Thoughts:** This was quite a heavy day, full of steep learning curves. Among my achievements:
 
-* Relocated the development of the package to the relevant path (`src/github.com/pjsoftware`) of my `$GOPATH` folder. Up until now I've been working elsewhere because, well, because I come from a non-Go, non-git, primarily Windows background, and all of my development until recently has been within my SVN working folder tree. When I fully embraced the beauty (and horror) of `git` on the command line (for a while I was using `svn` to keep my `github` repository up to date; it works, but it is definitely *sub-optimal*!) I created myself a git working folder! (Hey, if it works...!)
-* Developed a standalone package intended to be sourced via github. No doubt there are things missing--a *licence*, for instance--but I figured it was time to work out how to make this work, and the best way to learn is to do. One of the big decisions I had to make was what to call the repository. While I'm currently focussing heavily on `Go`, I *will* be playing with other languages too, so I ultimately opted for the 'go' prefix to the name. My first impulse was to do something like 'gopackages/tokens', but it seems `git` does not really handle (or allow) subrepositories such as I would have used with `svn`. (Comparing the two, `git` has both advantages and disadvantages vs `svn`!)
-* Built a full error handling system within the package. Back on **Day 13** I made a preliminary foray into the wonders of extended error handling in `Go`. However, I was tacking it onto existing code, so it was a shoddy attempt at best--and I just did not *grok* it. Having built it in from the ground up, I think I have a much better idea of what it can do, and how to use it properly.
-* Full unit testing was not only added after the fact, but built alongside my code from the ground up. This helped me find a few errors which I would otherwise never have detected until tomorrow--or, y'know, months down the road.
-* I gained a huge appreciation for just how productive `VSCode` can be when developing and, specifically, testing `Go` code. I'd already discovered how much better a modern `IDE` could be than the old, simple syntax-highlighting editor I had been using for so long. Full code completion, syntax error detection, all those awesome things are great--and `Go` even specifies the formatting to use, so having it reformat your code as you go just eliminates the old formatting arguments/decisions. (They never really affected me when I was happily working in isolation, but I was always aware of them.) **Also**, when running your package tests from inside the editor, `VSCode` not only tells you the percentage of code coverage you have achieved, it also highlights the code that has and has not actually been tested! Invaluable!
+- Relocated the development of the package to the relevant path (`src/github.com/pjsoftware`) of my `$GOPATH` folder. Up until now I've been working elsewhere because, well, because I come from a non-Go, non-git, primarily Windows background, and all of my development until recently has been within my SVN working folder tree. When I fully embraced the beauty (and horror) of `git` on the command line (for a while I was using `svn` to keep my `github` repository up to date; it works, but it is definitely _sub-optimal_!) I created myself a git working folder! (Hey, if it works...!)
+- Developed a standalone package intended to be sourced via github. No doubt there are things missing--a _licence_, for instance--but I figured it was time to work out how to make this work, and the best way to learn is to do. One of the big decisions I had to make was what to call the repository. While I'm currently focussing heavily on `Go`, I _will_ be playing with other languages too, so I ultimately opted for the 'go' prefix to the name. My first impulse was to do something like 'gopackages/tokens', but it seems `git` does not really handle (or allow) subrepositories such as I would have used with `svn`. (Comparing the two, `git` has both advantages and disadvantages vs `svn`!)
+- Built a full error handling system within the package. Back on **Day 13** I made a preliminary foray into the wonders of extended error handling in `Go`. However, I was tacking it onto existing code, so it was a shoddy attempt at best--and I just did not _grok_ it. Having built it in from the ground up, I think I have a much better idea of what it can do, and how to use it properly.
+- Full unit testing was not only added after the fact, but built alongside my code from the ground up. This helped me find a few errors which I would otherwise never have detected until tomorrow--or, y'know, months down the road.
+- I gained a huge appreciation for just how productive `VSCode` can be when developing and, specifically, testing `Go` code. I'd already discovered how much better a modern `IDE` could be than the old, simple syntax-highlighting editor I had been using for so long. Full code completion, syntax error detection, all those awesome things are great--and `Go` even specifies the formatting to use, so having it reformat your code as you go just eliminates the old formatting arguments/decisions. (They never really affected me when I was happily working in isolation, but I was always aware of them.) **Also**, when running your package tests from inside the editor, `VSCode` not only tells you the percentage of code coverage you have achieved, it also highlights the code that has and has not actually been tested! Invaluable!
 
 ### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Revised to use gotokens
 
@@ -160,7 +172,7 @@ Currently it's very bare-bones, but I'm building in testing as I go. Attempting 
 
 **Today's Progress:** Refactored my first three solvers, and my cell collection code.
 
-**Thoughts:** I actually got quite a bit done, without making any actual progress! Because I *know* that the fourth solver is going to be complicated to write, I decided, first off, to split each solver into its own `.go` file. In the process of doing this, I discovered that I no longer remembered how `solver03` works, and the code did *not* clarify anything. Because it now lived in its own file, it was much easier to refactor it in an attempt to make the code more readable.
+**Thoughts:** I actually got quite a bit done, without making any actual progress! Because I _know_ that the fourth solver is going to be complicated to write, I decided, first off, to split each solver into its own `.go` file. In the process of doing this, I discovered that I no longer remembered how `solver03` works, and the code did _not_ clarify anything. Because it now lived in its own file, it was much easier to refactor it in an attempt to make the code more readable.
 
 This, of course, led to the solver breaking! I added a bunch of debugging print statements using the existing `showWorking` mechanism, and discovered that during the refactoring process I had managed to drop an important `else`. I fixed that up, and then decided that it made more sense for my `s3` to have its own independent `showWorking` code. More importantly, this then set the precedent for `s4` to be a lot more organised and easy to keep track of what I'm doing as I write it.
 
@@ -174,9 +186,9 @@ Finally--or rather, initially, because it was one of the first things I did--I m
 
 **Today's Progress:** Made the code more oop-oriented.
 
-**Thoughts:** This was mostly a reorganisation of code to allow all the possible errors to be triggered *before* any non-reversible action has occurred. Making the `tweeter` package OO allowed me to easily split the init code from the tweeting code.
+**Thoughts:** This was mostly a reorganisation of code to allow all the possible errors to be triggered _before_ any non-reversible action has occurred. Making the `tweeter` package OO allowed me to easily split the init code from the tweeting code.
 
-At the same time I moved the `main.go` file into a `cmd/TweetCommit` folder (as per yesterday's `Win-Spotlight` update) and added a `publish.sh` shell script to simplify building the `exe` file and copying it out to where it is needed. (Possibly a symlink would make more sense ... but we *are* still working on a Windows machine, even if we're currently using `git bash` to get around. A shortcut, maybe? I'll do some testing...)
+At the same time I moved the `main.go` file into a `cmd/TweetCommit` folder (as per yesterday's `Win-Spotlight` update) and added a `publish.sh` shell script to simplify building the `exe` file and copying it out to where it is needed. (Possibly a symlink would make more sense ... but we _are_ still working on a Windows machine, even if we're currently using `git bash` to get around. A shortcut, maybe? I'll do some testing...)
 
 ## Day 16: April 4, 2020: Saturday
 
@@ -194,7 +206,7 @@ At the same time, I was wrestling with the fact that `go build` was, by default,
 
 **Today's Progress:** Fixed the formatting of the date
 
-**Thoughts:** While making my last tweak of `increment-log.py`, I spent a little time looking for a formatting code to use with `strftime` which would *not* zero-pad the day of the month. I found something online which told me I could use `%-d` instead of `%d`. Turns out this was not correct--and because that particular line of code is only interpreted at runtime, I would not find out until I tried to run the script today.
+**Thoughts:** While making my last tweak of `increment-log.py`, I spent a little time looking for a formatting code to use with `strftime` which would _not_ zero-pad the day of the month. I found something online which told me I could use `%-d` instead of `%d`. Turns out this was not correct--and because that particular line of code is only interpreted at runtime, I would not find out until I tried to run the script today.
 
 To get the format I actually wanted, I had to specifically check for the leading zero and remove it.
 
@@ -206,7 +218,7 @@ To ensure this does not happen again--well, I guess it's time to look into unit 
 
 **Today's Progress:** Revised output to better explain what is happening.
 
-**Thoughts:** `TweetCommit.exe` is working okay, but it needs a little refinement. It actually *seems* to hang for a while, so I've added output to give a better idea of what is going on. (I *think* I know where the delay is happening, but until I run it with the new output enabled I really don't know for sure!)
+**Thoughts:** `TweetCommit.exe` is working okay, but it needs a little refinement. It actually _seems_ to hang for a while, so I've added output to give a better idea of what is going on. (I _think_ I know where the delay is happening, but until I run it with the new output enabled I really don't know for sure!)
 
 **Update:** `git push` is where the biggest delay lies...
 
@@ -236,7 +248,7 @@ Now there is:
 
 It also confirmed, once and for all, that I had to move away from using the old text editor I've been using for the last 18-odd years -- and, honestly, much as I loved it, that has been the best thing I could have done!
 
-I noticed that, despite my efforts to intercept it in the renaming process, some of the files in my wallpaper folder had a doubled-up copyright symbol in their name. I renamed them there, but obviously the only way to truly fix the problem is by curing the illness rather than treating the symptoms. *(Signs that you are living through the **Coronapocalypse**: medical analogies in your log files!)* So my first work for today was to fix up that particular piece of code.
+I noticed that, despite my efforts to intercept it in the renaming process, some of the files in my wallpaper folder had a doubled-up copyright symbol in their name. I renamed them there, but obviously the only way to truly fix the problem is by curing the illness rather than treating the symptoms. _(Signs that you are living through the **Coronapocalypse**: medical analogies in your log files!)_ So my first work for today was to fix up that particular piece of code.
 
 #### Unit Tests
 
@@ -258,9 +270,9 @@ I probably won't write a completely comprehensive test suite today, but I'd at l
 
 As somebody who is mostly self-taught, and who has done most of their coding in isolation\*, my approach to error handling in other languages has been ... minimal. A few years back I ran across the concept of throwing exceptions and letting the calling code catch them if necessary. Plenty of this started creeping into my `Perl` code from that point on.
 
-Of course, `Go` takes error handling in the complete opposite direction, treating errors as values which can be passed back to the calling code, there to be checked or ignored as required -- with the caveat that ignoring them *must* be a deliberate choice rather than a simple oversight. In many ways this is the same logic as throwing an exception: the programmer can choose to either deal with it or ignore it, but they *must* choose. I like it. Even if it does tend to clutter the code...
+Of course, `Go` takes error handling in the complete opposite direction, treating errors as values which can be passed back to the calling code, there to be checked or ignored as required -- with the caveat that ignoring them _must_ be a deliberate choice rather than a simple oversight. In many ways this is the same logic as throwing an exception: the programmer can choose to either deal with it or ignore it, but they _must_ choose. I like it. Even if it does tend to clutter the code...
 
-During my *lost-time* hiatus (I'm just gonna go ahead and blame alien abduction!) I actually did a little reading on error handling in Go. It's something I'll be exploring further, but certainly adding an `Error` type in this code (if I have the time) would be a good start.
+During my _lost-time_ hiatus (I'm just gonna go ahead and blame alien abduction!) I actually did a little reading on error handling in Go. It's something I'll be exploring further, but certainly adding an `Error` type in this code (if I have the time) would be a good start.
 
 \* Told you!
 
@@ -272,7 +284,7 @@ During my *lost-time* hiatus (I'm just gonna go ahead and blame alien abduction!
 
 **Today's Progress:** Renamed. Added code to prevent tweeting the same entry more than once.
 
-**Thoughts:** So ... `increment-log.py` has safeguards to prevent it from incrementing the log when there are uncommitted changes, or when it only contains the stub from the previous run. And `TweetCommit.exe` has safeguards to prevent it from doing anything when the log has not yet been filled in. But as far as I can tell, if I happen to run it twice in a row, there is nothing to stop it from tweeting out the same tweet it has already sent. Which is, I guess, not actually *wrong*, but it *is* a little spammy.
+**Thoughts:** So ... `increment-log.py` has safeguards to prevent it from incrementing the log when there are uncommitted changes, or when it only contains the stub from the previous run. And `TweetCommit.exe` has safeguards to prevent it from doing anything when the log has not yet been filled in. But as far as I can tell, if I happen to run it twice in a row, there is nothing to stop it from tweeting out the same tweet it has already sent. Which is, I guess, not actually _wrong_, but it _is_ a little spammy.
 
 I guess the best way to achieve that would be to check whether git considers the `log.md` file clean or not. We have already done this in `Python` with:
 
@@ -320,7 +332,7 @@ The question is, how do we do this in `Go`? Presumably the same way: run `git di
 
 The **TutorialEdge** code worked by setting your API user tokens as part of your environment--because as author **Elliot Forbes** rightly says, information like that should not be committed to your repository. Since I work on two different home machines at the moment--a desktop and a laptop--I opted instead to save my API tokens in a json file on my home network so that both computers can access them easily.
 
-Tweeting via this code does actually work, but that is only part of what I want it to do. The second step would be for it to read and parse *this* log file, pull out the most recent Day number, project name, and "Today's Progress" blurb, and construct a tweet from those.  However, it should *also* commit (and push) this file to github using the same information. Possibly "AutoTweet" is a bit of a misnomer, and the repo name may change at some point. (Done.)
+Tweeting via this code does actually work, but that is only part of what I want it to do. The second step would be for it to read and parse _this_ log file, pull out the most recent Day number, project name, and "Today's Progress" blurb, and construct a tweet from those. However, it should _also_ commit (and push) this file to github using the same information. Possibly "AutoTweet" is a bit of a misnomer, and the repo name may change at some point. (Done.)
 
 **Things to Investigate Further:** Go Modules. Also, how best to publish individual Go packages to github so I can use them in multiple projects if required.
 
@@ -366,7 +378,7 @@ Next step: work on solving the remaining cells of the unsolvable puzzles, determ
 
 First, I refined the display of the grid to improve readability.
 
-Second, I added the ability for my solvers to optionally show their working. At the same time I clarified the "OnePossibleValue" approach which my only actual solver func uses. This became necessary because I had added a couple more "easy"/"medium" puzzles (from a magazine Mum had, while I was at her place on Thursday night) which I *expected* my solver to handle, but which it could not touch. It did not make sense, because from a quick visual inspection I could easily fill in a couple of values. Something was going wrong, and I needed to figure out what.
+Second, I added the ability for my solvers to optionally show their working. At the same time I clarified the "OnePossibleValue" approach which my only actual solver func uses. This became necessary because I had added a couple more "easy"/"medium" puzzles (from a magazine Mum had, while I was at her place on Thursday night) which I _expected_ my solver to handle, but which it could not touch. It did not make sense, because from a quick visual inspection I could easily fill in a couple of values. Something was going wrong, and I needed to figure out what.
 
 Turns out what was going on was that my code was working perfectly as intended. It was my brain that was glitching; the method I was using to get started on the new puzzles was not simply "OnePossibleValue"; I was actually visually identifying narrow points in individual blocks and then eliminating possible values for surrounding cells. It was just so automatic that I thought I was doing OPV processing.
 
@@ -374,7 +386,7 @@ Did I just debug my brain?
 
 Now I need to analyse what I was actually doing by eye, and convert that back into code. But that's a task for tomorrow\*.
 
-*\* Later today!*
+_\* Later today!_
 
 ## Day 5: March 19, 2020: Thursday
 
