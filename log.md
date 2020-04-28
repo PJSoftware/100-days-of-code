@@ -1,5 +1,23 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 38: April 28, 2020: Tuesday
+
+Once more. Primarily bug fixes, digging through the new codebase to find the two or three subtle bugs that were causing the whole thing to fail.
+
+## Day 37: April 27, 2020: Monday
+
+Another late night. Secret project, etc. Got the new solution from Friday all coded up and integrated.
+
+## Day 36: April 26, 2020: Sunday
+
+Another late night working on my secret project. Had to pull the code apart and put it back together in order to make the next change. Of course, that gave me enough trouble that I was beginning to regret the move (and considering reverting to the earlier version) before I finally figiured out the best way to structure everything.
+
+## Day 35: April 24, 2020: Friday
+
+Watched the first half of `Intro to JavaScript` without learning much; it's all basic discussion around general programming concepts.
+
+I was also up late working on my secret project. Very late. So late that on Saturday I went for a long walk rather than even look at a computer. I actually found the solution to a tricky problem, and was exploring how to make it work.
+
 ## Day 34: April 23, 2020: Thursday
 
 ### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/07-IntermediateBootstrap) Day 6
