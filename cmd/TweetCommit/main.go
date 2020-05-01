@@ -20,6 +20,7 @@ func main() {
 	tw := tweeter.NewTweeter()
 	if tw.Err != nil {
 		fmt.Printf("Error initialising Twitter: %v\n", tw.Err)
+		return
 	}
 
 	err := tw.TweetHDC(ld)
