@@ -1,5 +1,9 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 39: April 29, 2020: Wednesday
+
+More of the same. Fixed the problems I had.
+
 ## Day 38: April 28, 2020: Tuesday
 
 Once more. Primarily bug fixes, digging through the new codebase to find the two or three subtle bugs that were causing the whole thing to fail.
