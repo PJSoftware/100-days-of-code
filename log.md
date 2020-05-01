@@ -1,5 +1,15 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 41: May 1, 2020: Friday
+
+### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Relocated
+
+**Today's Progress:** Thinking about git branching made me realise TweetCommit belonged inside my 100daysofcode repo.
+
+**Thoughts:** Because TweetCommit is *only* used for tweeting/committing changes to the `log.md` file in this repository, I decided it *belonged* here, rather than in a separate repo! The realisation came to me because, after my adventures in git-branching (see yesterday's entry) I wanted to do something a little more than simply commit absolutely everything onto `master`. To do this I needed to modify both `increment-log.py` and `TweetCommit`; they are two halves of the same coin, but lived in separate repositories... That seemed wrong!
+
+I merged my TweetCommit repository into my 100DaysofCode repository (see [here](https://saintgimp.org/2013/01/22/merging-two-git-repositories-into-one-repository-without-losing-file-history/) and [here](https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase) for details on how I did this.) I then modified the code as necessary (as I type this I realise I need to make one more change to `TweetCommit`, but I'll confirm that by running it to comit this file!)
+
 ## Day 40: April 30, 2020: Thursday
 
 Learning all about branch use (methods and strategies) in git.
@@ -144,7 +154,7 @@ Later is now, more or less. `DeleteDuplicates` compares the Spotlight Wallpaper 
 
 ## Day 22: April 11, 2020: Saturday
 
-### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Regexp Fixed
+### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Regexp Fixed
 
 **Today's Progress:** Revised the regexp, added testing, refactored the credential code.
 
@@ -190,7 +200,7 @@ Currently it's very bare-bones, but I'm building in testing as I go. Attempting 
 - Full unit testing was not only added after the fact, but built alongside my code from the ground up. This helped me find a few errors which I would otherwise never have detected until tomorrow--or, y'know, months down the road.
 - I gained a huge appreciation for just how productive `VSCode` can be when developing and, specifically, testing `Go` code. I'd already discovered how much better a modern `IDE` could be than the old, simple syntax-highlighting editor I had been using for so long. Full code completion, syntax error detection, all those awesome things are great--and `Go` even specifies the formatting to use, so having it reformat your code as you go just eliminates the old formatting arguments/decisions. (They never really affected me when I was happily working in isolation, but I was always aware of them.) **Also**, when running your package tests from inside the editor, `VSCode` not only tells you the percentage of code coverage you have achieved, it also highlights the code that has and has not actually been tested! Invaluable!
 
-### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Revised to use gotokens
+### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Revised to use gotokens
 
 ## Day 18: April 6, 2020: Monday
 
@@ -208,7 +218,7 @@ Finally--or rather, initially, because it was one of the first things I did--I m
 
 ## Day 17: April 5, 2020: Sunday
 
-### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Code Structure Refined
+### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Code Structure Refined
 
 **Today's Progress:** Made the code more oop-oriented.
 
@@ -240,7 +250,7 @@ To ensure this does not happen again--well, I guess it's time to look into unit 
 
 ## Day 14: April 2, 2020: Thursday
 
-### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Output Revised
+### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Output Revised
 
 **Today's Progress:** Revised output to better explain what is happening.
 
@@ -306,7 +316,7 @@ During my _lost-time_ hiatus (I'm just gonna go ahead and blame alien abduction!
 
 ## Day 12: March 26, 2020: Thursday
 
-### [TweetCommit (was AutoTweeter)](https://github.com/PJSoftware/TweetCommit) Final Tweak
+### [TweetCommit (was AutoTweeter)](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Final Tweak
 
 **Today's Progress:** Renamed. Added code to prevent tweeting the same entry more than once.
 
@@ -340,7 +350,7 @@ The question is, how do we do this in `Go`? Presumably the same way: run `git di
 
 ## Day 11: March 25, 2020: Wednesday
 
-### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Day 2
+### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Day 2
 
 **Today's Progress:** TweetCommit completed; now commits AND tweets
 
@@ -350,7 +360,7 @@ The question is, how do we do this in `Go`? Presumably the same way: run `git di
 
 ## Day 10: March 24, 2020: Tuesday
 
-### [TweetCommit](https://github.com/PJSoftware/TweetCommit) Day 1
+### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Day 1
 
 **Today's Progress:** Preliminary work on TweetCommit
 
