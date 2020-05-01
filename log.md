@@ -1,5 +1,9 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 40: April 30, 2020: Thursday
+
+Learning all about branch use (methods and strategies) in git.
+
 ## Day 39: April 29, 2020: Wednesday
 
 More of the same. Fixed the problems I had.
