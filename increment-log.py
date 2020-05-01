@@ -48,7 +48,7 @@ def incLog():
     os.rename("log.md.out", "log.md")
 
     if day > 0:
-        subprocess.run(['git', 'checkout', '-b', 'day-'+str(day), 'master'])
+        subprocess.run(['git', 'checkout', '-b', 'day-'+str(day+1), 'master'])
 
 
 def insertDay(wf, m):
