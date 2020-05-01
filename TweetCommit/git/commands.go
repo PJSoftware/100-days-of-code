@@ -33,10 +33,21 @@ func Commit(ld *logdata.LogData) {
 		cmdS string
 		cmdX *exec.Cmd
 	}
+
+	branch := fmt.Sprintf("day-%d", ld.Day)
+	tag := fmt.Sprintf("day%d", ld.Day)
+
 	var cmds []cmdObj
+	cmds = append(cmds, cmdObj{"checkout", exec.Command("git", "checkout", branch)})
 	cmds = append(cmds, cmdObj{"add", exec.Command("git", "add", "log.md")})
 	cmds = append(cmds, cmdObj{"commit", exec.Command("git", "commit", "log.md", "-m", msg)})
+	cmds = append(cmds, cmdObj{"checkout", exec.Command("git", "checkout", "master")})
+	cmds = append(cmds, cmdObj{"merge", exec.Command("git", "merge", "--no-ff", branch)})
+	cmds = append(cmds, cmdObj{"tag", exec.Command("git", "tag", "-a", tag)})
+	cmds = append(cmds, cmdObj{"branch", exec.Command("git", "branch", "-d", branch)})
 	cmds = append(cmds, cmdObj{"push", exec.Command("git", "push")})
+	cmds = append(cmds, cmdObj{"push", exec.Command("git", "push", "--tags")})
+
 	for _, cmd := range cmds {
 		fmt.Printf("  * Running command: git %v ...\n", cmd.cmdS)
 		cmd.cmdX.Run()
