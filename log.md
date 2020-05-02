@@ -1,12 +1,18 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 42: May 2, 2020: Saturday
+
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/11-The_Dice_Game) Day 9
+
+**Today's Progress:** Document Object Model: The good stuff! Finally get to start doing something with JavaScript! Developing a "dice game" as a challenge.
+
 ## Day 41: May 1, 2020: Friday
 
 ### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Relocated
 
 **Today's Progress:** Thinking about git branching made me realise TweetCommit belonged inside my 100daysofcode repo.
 
-**Thoughts:** Because TweetCommit is *only* used for tweeting/committing changes to the `log.md` file in this repository, I decided it *belonged* here, rather than in a separate repo! The realisation came to me because, after my adventures in git-branching (see yesterday's entry) I wanted to do something a little more than simply commit absolutely everything onto `master`. To do this I needed to modify both `increment-log.py` and `TweetCommit`; they are two halves of the same coin, but lived in separate repositories... That seemed wrong!
+**Thoughts:** Because TweetCommit is _only_ used for tweeting/committing changes to the `log.md` file in this repository, I decided it _belonged_ here, rather than in a separate repo! The realisation came to me because, after my adventures in git-branching (see yesterday's entry) I wanted to do something a little more than simply commit absolutely everything onto `master`. To do this I needed to modify both `increment-log.py` and `TweetCommit`; they are two halves of the same coin, but lived in separate repositories... That seemed wrong!
 
 I merged my TweetCommit repository into my 100DaysofCode repository (see [here](https://saintgimp.org/2013/01/22/merging-two-git-repositories-into-one-repository-without-losing-file-history/) and [here](https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase) for details on how I did this.) I then modified the code as necessary (as I type this I realise I need to make one more change to `TweetCommit`, but I'll confirm that by running it to comit this file!)
 
