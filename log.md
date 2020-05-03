@@ -6,6 +6,18 @@
 
 **Today's Progress:** Advanced JavaScript: developed the drum playing website. Covers audio, animation, objects, and DOM manipulation.
 
+**Thoughts:** It occurs to me that I have just learned how to add music to a website.
+
+My first website, lost now to the mists of time, was built in, oh, let's say 1998, give or take. It was an exercise in pre-CSS HTML (3.01, I want to say?) One of the cool things I figured out how to do was to add music that would auto-play on each page.
+
+Shortly thereafter, I spoke to the team who were building one of the `Doom` clones (I think it was `Boom` but I could be wrong.) They were attempting to get music playing on _their_ site, and I was happy to give them the info they needed. For years thereafter, their site played `Doom` music to its visitors, and they gave me the credit, right their on their page. (Sadly, it does not seem to exist any more; it finally got replaced by a wiki, as far as I can tell!)
+
+And shortly after _that_, I was educated as to why auto-playing music was a bad idea, and took my first steps into the world of accessibility--or at least, into acknowledging that not everybody liked what I liked. I turned the music off... (Was that _the night the music died_? Let's not go there.)
+
+I find myself wondering how that person with accessibility issues copes with the web of today, with animations and auto-start video ads everywhere.
+
+Either way, here we are, 22 years later, and I've just learned how to get my website to play music. The words of Ian Malcolm come to mind...
+
 ## Day 42: May 2, 2020: Saturday
 
 ### 2020 WebDev BootCamp [Section 11](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/11-The_Dice_Game)
