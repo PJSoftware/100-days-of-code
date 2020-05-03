@@ -62,5 +62,11 @@ Loop:
 		if got != exp {
 			t.Errorf("Subtitle: Expected '%s', got '%s'", exp, got)
 		}
+
+		got = reSplit.ReplaceAllString("ABC", "$1")
+		exp = "ABC"
+		if got != exp {
+			t.Errorf("Subtitle: Expected '%s', got '%s'", exp, got)
+		}
 	}
 }
