@@ -1,5 +1,11 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 43: May 3, 2020: Sunday
+
+### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/12-Advanced_JavaScript) Section 12
+
+**Today's Progress:** Advanced JavaScript: developed the drum playing website. Covers audio, animation, objects, and DOM manipulation.
+
 ## Day 42: May 2, 2020: Saturday
 
 ### [2020 Web Development Bootcamp](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/11-The_Dice_Game) Day 9
