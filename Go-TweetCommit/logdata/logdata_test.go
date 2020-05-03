@@ -1,9 +1,16 @@
 package logdata
 
-import "testing"
+import (
+	"regexp"
+	"testing"
+)
 
 func TestREPatterns(t *testing.T) {
 	re := rePatterns()
+	var reSplit *regexp.Regexp
+	stText := "New [pdfill package](https://github.com/PJSoftware/pdfill) Split() Functionality Complete"
+
+Loop:
 	for _, pat := range re {
 		var str string
 		var exp []string
@@ -14,14 +21,19 @@ func TestREPatterns(t *testing.T) {
 		case "DayInfo":
 			str = "## Day 21: April 9, 2020: Thursday"
 			exp = []string{"21"}
-		case "URLInfo":
-			str = "### [pdfill package](https://github.com/PJSoftware/pdfill) Split() Functionality Complete"
-			exp = []string{"pdfill package", "Split() Functionality Complete"}
+		case "SubTitle":
+			str = "### New [pdfill package](https://github.com/PJSoftware/pdfill) Split() Functionality Complete"
+			exp = []string{stText}
 		case "DescInfo":
 			str = "**Today's Progress:** Split() is now fully working"
 			exp = []string{"Split() is now fully working"}
 		default:
-			t.Errorf("Unexpected pattern name '%s'", pat.task)
+			if pat.task != "stSplit" {
+				t.Errorf("Unexpected pattern name '%s'", pat.task)
+			} else {
+				reSplit = pat.regexp
+				continue Loop
+			}
 		}
 		matches := pat.regexp.FindAllStringSubmatch(str, -1)
 		if len(matches) == 0 {
@@ -40,6 +52,21 @@ func TestREPatterns(t *testing.T) {
 				}
 			}
 		}
+	}
 
+	if reSplit == nil {
+		t.Errorf("stSplit regexp not defined")
+	} else {
+		got := reSplit.ReplaceAllString(stText, "$1")
+		exp := "New pdfill package Split() Functionality Complete"
+		if got != exp {
+			t.Errorf("Subtitle: Expected '%s', got '%s'", exp, got)
+		}
+
+		got = reSplit.ReplaceAllString("ABC", "$1")
+		exp = "ABC"
+		if got != exp {
+			t.Errorf("Subtitle: Expected '%s', got '%s'", exp, got)
+		}
 	}
 }

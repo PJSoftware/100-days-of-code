@@ -39,9 +39,11 @@ func rePatterns() []*ParseRE {
 	re := []*ParseRE{
 		{"RoundInfo", `^[#] .+[(]Round (\d+)[)]`, nil},
 		{"DayInfo", `^[#]{2} Day (\d+):`, nil},
-		{"URLInfo", `^[#]{3} [[]([^]]+)[]][(][^)]+[)]\s*(\S.+)?$`, nil},
+		{"SubTitle", `^[#]{3} (.+)$`, nil},
+		{"stSplit", `[[]([^]]+)[]][(][^)]+[)]`, nil},
 		{"DescInfo", `^[*]{2}Today's Progress:[*]{2} (.+)`, nil},
 	}
+
 	for _, pat := range re {
 		pat.regexp = regexp.MustCompile(pat.pattern)
 	}
@@ -57,6 +59,8 @@ func (ld *LogData) parse(logfn string) error {
 
 	patterns := rePatterns()
 	scanner := bufio.NewScanner(file)
+
+	var reSplit *regexp.Regexp
 
 readFile:
 	for scanner.Scan() {
@@ -74,19 +78,14 @@ readFile:
 						return fmt.Errorf("Day encountered twice; error in %s format", logfn)
 					}
 					ld.Day, _ = strconv.Atoi(pat.regexp.FindStringSubmatch(line)[1])
-				case "URLInfo":
+				case "SubTitle":
+					// {"URLInfo", `^[#]{3} [[]([^]]+)[]][(][^)]+[)]\s*(\S.+)?$`, nil},
 					if ld.Topic != "" {
 						return fmt.Errorf("Topic encountered twice; error in %s format", logfn)
 					}
-					tp := pat.regexp.FindStringSubmatch(line)[1]
-					ts := pat.regexp.FindStringSubmatch(line)[2]
-					if tp == "text" {
-						return fmt.Errorf("Latest entry for day %d not filled in", ld.Day)
-					}
-					if ts != "" {
-						tp = tp + " " + ts
-					}
-					ld.Topic = tp
+					ld.Topic = pat.regexp.FindStringSubmatch(line)[1]
+				case "stSplit":
+					reSplit = pat.regexp
 				case "DescInfo":
 					if ld.Round == 0 || ld.Day == 0 || ld.Topic == "" {
 						return fmt.Errorf("Description found before other info; error in %s format", logfn)
@@ -100,6 +99,10 @@ readFile:
 
 	if err := scanner.Err(); err != nil {
 		return err
+	}
+
+	if reSplit.MatchString(ld.Topic) {
+		ld.Topic = reSplit.ReplaceAllString(ld.Topic, "$1")
 	}
 
 	return nil
