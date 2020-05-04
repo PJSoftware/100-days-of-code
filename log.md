@@ -1,5 +1,15 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 44: May 4, 2020: Monday
+
+### 2020 WebDev BootCamp [Section 14](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/14-The_Simon_Game)
+
+**Today's Progress:** The Simon Game, using jQuery (from Section 13, which I also covered.)
+
+**Thoughts:** Section 13 was `jQuery`. We went through it without doing much, so I decided to convert the Section 12 project to jQuery, and add a little extra: classes.
+
+While developing `Simon`, I struggled a little with jQuery; I think I was confused over how it should be working, or how it could be used.
+
 ## Day 43: May 3, 2020: Sunday
 
 ### 2020 WebDev BootCamp [Section 12](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/12-Advanced_JavaScript)
