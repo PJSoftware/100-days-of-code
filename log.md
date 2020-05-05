@@ -1,5 +1,11 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 45: May 5, 2020: Tuesday
+
+### 2020 WebDev BootCamp [Section 17](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/17-Node.js)
+
+**Today's Progress:** Node.js: just like regular js, but with Nodes. I guess?! (I jest. Kinda.) We also covered bash, which was nothing new.
+
 ## Day 44: May 4, 2020: Monday
 
 ### 2020 WebDev BootCamp [Section 14](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/14-The_Simon_Game)
