@@ -1,13 +1,11 @@
 package logdata
 
 import (
-	"regexp"
 	"testing"
 )
 
 func TestREPatterns(t *testing.T) {
 	re := rePatterns()
-	var reSplit *regexp.Regexp
 	stText := "New [pdfill package](https://github.com/PJSoftware/pdfill) Split() Functionality Complete"
 
 Loop:
