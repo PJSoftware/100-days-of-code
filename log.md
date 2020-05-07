@@ -1,10 +1,44 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 46: May 6, 2020: Wednesday
+
+### Miscellaneous coding project: json files
+
+**Today's Progress:** Analysing semi-related json-formatted file structures, looking for commonalities and differences.
+
+## Day 45: May 5, 2020: Tuesday
+
+### 2020 WebDev BootCamp [Section 17](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/17-Node.js)
+
+**Today's Progress:** Node.js: just like regular js, but with Nodes. I guess?! (I jest. Kinda.) We also covered bash, which was nothing new.
+
+## Day 44: May 4, 2020: Monday
+
+### 2020 WebDev BootCamp [Section 14](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/14-The_Simon_Game)
+
+**Today's Progress:** The Simon Game, using jQuery (from Section 13, which I also covered.)
+
+**Thoughts:** Section 13 was `jQuery`. We went through it without doing much, so I decided to convert the Section 12 project to jQuery, and add a little extra: classes.
+
+While developing `Simon`, I struggled a little with jQuery; I think I was confused over how it should be working, or how it could be used.
+
 ## Day 43: May 3, 2020: Sunday
 
 ### 2020 WebDev BootCamp [Section 12](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/12-Advanced_JavaScript)
 
 **Today's Progress:** Advanced JavaScript: developed the drum playing website. Covers audio, animation, objects, and DOM manipulation.
+
+**Thoughts:** It occurs to me that I have just learned how to add music to a website.
+
+My first website, lost now to the mists of time, was built in, oh, let's say 1998, give or take. It was an exercise in pre-CSS HTML (3.01, I want to say?) One of the cool things I figured out how to do was to add music that would auto-play on each page.
+
+Shortly thereafter, I spoke to the team who were building one of the `Doom` clones (I think it was `Boom` but I could be wrong.) They were attempting to get music playing on _their_ site, and I was happy to give them the info they needed. For years thereafter, their site played `Doom` music to its visitors, and they gave me the credit, right their on their page. (Sadly, it does not seem to exist any more; it finally got replaced by a wiki, as far as I can tell!)
+
+And shortly after _that_, I was educated as to why auto-playing music was a bad idea, and took my first steps into the world of accessibility--or at least, into acknowledging that not everybody liked what I liked. I turned the music off... (Was that _the night the music died_? Let's not go there.)
+
+I find myself wondering how that person with accessibility issues copes with the web of today, with animations and auto-start video ads everywhere.
+
+Either way, here we are, 22 years later, and I've just learned how to get my website to play music. The words of Ian Malcolm come to mind...
 
 ## Day 42: May 2, 2020: Saturday
 
