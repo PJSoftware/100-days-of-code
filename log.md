@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 47: May 7, 2020: Thursday
+
+### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Regexp handling fixed
+
+**Today's Progress:** This was one of those frustrating things where I don't have a decent test suite, so testing only occurs when I run the program.
+
+**Thoughts:** Don't you love a good runtime error? I think I've fixed it -- and also learned about git stash.
+
 ## Day 46: May 6, 2020: Wednesday
 
 ### Miscellaneous coding project: json files
