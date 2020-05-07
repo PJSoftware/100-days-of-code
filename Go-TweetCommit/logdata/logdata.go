@@ -35,18 +35,21 @@ type ParseRE struct {
 	regexp  *regexp.Regexp
 }
 
+var reSplit *regexp.Regexp
+
 func rePatterns() []*ParseRE {
 	re := []*ParseRE{
 		{"RoundInfo", `^[#] .+[(]Round (\d+)[)]`, nil},
 		{"DayInfo", `^[#]{2} Day (\d+):`, nil},
 		{"SubTitle", `^[#]{3} (.+)$`, nil},
-		{"stSplit", `[[]([^]]+)[]][(][^)]+[)]`, nil},
 		{"DescInfo", `^[*]{2}Today's Progress:[*]{2} (.+)`, nil},
 	}
 
 	for _, pat := range re {
 		pat.regexp = regexp.MustCompile(pat.pattern)
 	}
+
+	reSplit = regexp.MustCompile(`[[]([^]]+)[]][(][^)]+[)]`)
 	return re
 }
 
@@ -79,13 +82,10 @@ readFile:
 					}
 					ld.Day, _ = strconv.Atoi(pat.regexp.FindStringSubmatch(line)[1])
 				case "SubTitle":
-					// {"URLInfo", `^[#]{3} [[]([^]]+)[]][(][^)]+[)]\s*(\S.+)?$`, nil},
 					if ld.Topic != "" {
 						return fmt.Errorf("Topic encountered twice; error in %s format", logfn)
 					}
 					ld.Topic = pat.regexp.FindStringSubmatch(line)[1]
-				case "stSplit":
-					reSplit = pat.regexp
 				case "DescInfo":
 					if ld.Round == 0 || ld.Day == 0 || ld.Topic == "" {
 						return fmt.Errorf("Description found before other info; error in %s format", logfn)
