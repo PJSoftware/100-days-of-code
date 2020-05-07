@@ -63,8 +63,6 @@ func (ld *LogData) parse(logfn string) error {
 	patterns := rePatterns()
 	scanner := bufio.NewScanner(file)
 
-	var reSplit *regexp.Regexp
-
 readFile:
 	for scanner.Scan() {
 		line := scanner.Text()
