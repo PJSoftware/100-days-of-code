@@ -1,5 +1,11 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 46: May 6, 2020: Wednesday
+
+### Miscellaneous coding project: json files
+
+**Today's Progress:** Analysing semi-related json-formatted file structures, looking for commonalities and differences.
+
 ## Day 45: May 5, 2020: Tuesday
 
 ### 2020 WebDev BootCamp [Section 17](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/17-Node.js)
