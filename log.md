@@ -1,5 +1,11 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 48: May 8, 2020: Friday
+
+### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Refactored, testing improved
+
+**Today's Progress:** The log parsing code was ... convoluted and messy. It needed to be cleaned up, Now it's better, and more easily testable.
+
 ## Day 47: May 7, 2020: Thursday
 
 ### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Regexp handling fixed
