@@ -29,13 +29,15 @@ type parseRE struct {
 
 // NewLogData reads specified log file
 func NewLogData(logfn string) *LogData {
-	fmt.Printf("Parsing contents of '%s'\n", logfn)
 	ld := new(LogData)
 	ld.re = rePatterns()
 	ld.logFN = logfn
-	err := ld.parse()
-	if err != nil {
-		log.Fatalf("Error reading '%s': %v", logfn, err)
+	if logfn != "" {
+		fmt.Printf("Parsing contents of '%s'\n", logfn)
+		err := ld.parse()
+		if err != nil {
+			log.Fatalf("Error reading '%s': %v", logfn, err)
+		}
 	}
 	return ld
 }
@@ -60,36 +62,16 @@ func (ld *LogData) parse() error {
 
 	scanner := bufio.NewScanner(file)
 
-readFile:
 	for scanner.Scan() {
 		line := scanner.Text()
-
-		if ld.re.Round.MatchString(line) {
-			err = ld.extractRound(line)
-		} else if ld.re.Day.MatchString(line) {
-			err = ld.extractDay(line)
-		} else if ld.re.Title.MatchString(line) {
-			err = ld.extractTitle(line)
-		} else if ld.re.Desc.MatchString(line) {
-			err = ld.extractDesc(line)
-			break readFile
+		err = ld.extractData(line)
+		if err != nil {
+			return err
+		}
+		if ld.Desc != "" {
+			break
 		}
 	}
-
-	if err != nil {
-		return err
-	}
-
-	// 			switch pat.task {
-	// 			case "RoundInfo":
-	// 			case "DayInfo":
-	// 			case "SubTitle":
-	// 			case "DescInfo":
-	// 				break readFile
-	// 			}
-	// 		}
-	// 	}
-	// }
 
 	if err := scanner.Err(); err != nil {
 		return err
@@ -98,37 +80,63 @@ readFile:
 	return nil
 }
 
-func (ld *LogData) extractRound(line string) error {
+func (ld *LogData) extractData(line string) error {
+	if ld.re.Round.MatchString(line) {
+		round, err := ld.extractRound(line)
+		if err != nil {
+			return err
+		}
+		ld.Round = round
+	} else if ld.re.Day.MatchString(line) {
+		day, err := ld.extractDay(line)
+		if err != nil {
+			return err
+		}
+		ld.Day = day
+	} else if ld.re.Title.MatchString(line) {
+		title, err := ld.extractTitle(line)
+		if err != nil {
+			return err
+		}
+		ld.Topic = title
+	} else if ld.re.Desc.MatchString(line) {
+		desc, err := ld.extractDesc(line)
+		if err != nil {
+			return err
+		}
+		ld.Desc = desc
+	}
+	return nil
+}
+
+func (ld *LogData) extractRound(line string) (int, error) {
 	if ld.Round != 0 {
-		return fmt.Errorf("Round encountered twice; error in %s format", ld.logFN)
+		return 0, fmt.Errorf("Round encountered twice; error in file format")
 	}
-	ld.Round, _ = strconv.Atoi(ld.re.Round.FindStringSubmatch(line)[1])
-	return nil
+	return strconv.Atoi(ld.re.Round.FindStringSubmatch(line)[1])
 }
 
-func (ld *LogData) extractDay(line string) error {
+func (ld *LogData) extractDay(line string) (int, error) {
 	if ld.Day != 0 {
-		return fmt.Errorf("Day encountered twice; error in %s format", ld.logFN)
+		return 0, fmt.Errorf("Day encountered twice; error in file format")
 	}
-	ld.Day, _ = strconv.Atoi(ld.re.Day.FindStringSubmatch(line)[1])
-	return nil
+	return strconv.Atoi(ld.re.Day.FindStringSubmatch(line)[1])
 }
 
-func (ld *LogData) extractTitle(line string) error {
+func (ld *LogData) extractTitle(line string) (string, error) {
 	if ld.Topic != "" {
-		return fmt.Errorf("Topic encountered twice; error in %s format", ld.logFN)
+		return "", fmt.Errorf("Topic encountered twice; error in file format")
 	}
-	ld.Topic = ld.re.Title.FindStringSubmatch(line)[1]
-	if ld.re.Split.MatchString(ld.Topic) {
-		ld.Topic = ld.re.Split.ReplaceAllString(ld.Topic, "$1")
+	topic := ld.re.Title.FindStringSubmatch(line)[1]
+	if ld.re.Split.MatchString(topic) {
+		topic = ld.re.Split.ReplaceAllString(topic, "$1")
 	}
-	return nil
+	return topic, nil
 }
 
-func (ld *LogData) extractDesc(line string) error {
+func (ld *LogData) extractDesc(line string) (string, error) {
 	if ld.Round == 0 || ld.Day == 0 || ld.Topic == "" {
-		return fmt.Errorf("Description found before other info; error in %s format", ld.logFN)
+		return "", fmt.Errorf("Description found before other info; error in file format")
 	}
-	ld.Desc = ld.re.Desc.FindStringSubmatch(line)[1]
-	return nil
+	return ld.re.Desc.FindStringSubmatch(line)[1], nil
 }
