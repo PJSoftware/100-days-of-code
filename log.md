@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 49: May 11, 2020: Monday
+
+### Miscellaneous Coding Project: Data Analysis
+
+**Today's Progress:** Performing automated data analysis. The results were ... inconclusive. Also: VSCods is awesome!
+
+**Thoughts:** Today I was getting a little frustrated that the VSCode installations on my two different workplaces (laptop vs desktop) had different settings, different extensions, and were generally drifting further apart by the day. I spent a little time searching for a half-remembered package I had installed on my laptop over the weekend, and instead discovered the `Sync Settings` extension. (Which, as well as solving my extension issues, also introduced me to the wonderful world of `github` *gists*.) Now both machines are back in sync, and I've got several other cool extensions installed as well.
+
 ## Day 48: May 8, 2020: Friday
 
 ### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Refactored, testing improved
