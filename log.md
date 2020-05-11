@@ -6,7 +6,7 @@
 
 **Today's Progress:** Performing automated data analysis. The results were ... inconclusive. Also: VSCods is awesome!
 
-**Thoughts:** Today I was getting a little frustrated that the VSCode installations on my two different workplaces (laptop vs desktop) had different settings, different extensions, and were generally drifting further apart by the day. I spent a little time searching for a half-remembered package I had installed on my laptop over the weekend, and instead discovered the `Sync Settings` extension. (Which, as well as solving my extension issues, also introduced me to the wonderful world of `github` *gists*.) Now both machines are back in sync, and I've got several other cool extensions installed as well.
+**Thoughts:** Today I was getting a little frustrated that the VSCode installations on my two different workplaces (laptop vs desktop) had different settings, different extensions, and were generally drifting further apart by the day. I spent a little time searching for a half-remembered package I had installed on my laptop over the weekend, and instead discovered the `Sync Settings` extension. (Which, as well as solving my extension issues, also introduced me to the wonderful world of `github` _gists_.) Now both machines are back in sync, and I've got several other cool extensions installed as well.
 
 ## Day 48: May 8, 2020: Friday
 
@@ -72,11 +72,11 @@ Either way, here we are, 22 years later, and I've just learned how to get my web
 
 ### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Relocated
 
-**Today's Progress:** Thinking about git branching made me realise TweetCommit belonged inside my 100daysofcode repo.
+**Today's Progress:** Thinking about git branching made me realise TweetCommit belonged inside my 100DaysOfCode repo.
 
 **Thoughts:** Because TweetCommit is _only_ used for tweeting/committing changes to the `log.md` file in this repository, I decided it _belonged_ here, rather than in a separate repo! The realisation came to me because, after my adventures in git-branching (see yesterday's entry) I wanted to do something a little more than simply commit absolutely everything onto `master`. To do this I needed to modify both `increment-log.py` and `TweetCommit`; they are two halves of the same coin, but lived in separate repositories... That seemed wrong!
 
-I merged my TweetCommit repository into my 100DaysofCode repository (see [here](https://saintgimp.org/2013/01/22/merging-two-git-repositories-into-one-repository-without-losing-file-history/) and [here](https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase) for details on how I did this.) I then modified the code as necessary (as I type this I realise I need to make one more change to `TweetCommit`, but I'll confirm that by running it to comit this file!)
+I merged my TweetCommit repository into my 100DaysOfCode repository (see [here](https://saintgimp.org/2013/01/22/merging-two-git-repositories-into-one-repository-without-losing-file-history/) and [here](https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase) for details on how I did this.) I then modified the code as necessary (as I type this I realise I need to make one more change to `TweetCommit`, but I'll confirm that by running it to commit this file!)
 
 ## Day 40: April 30, 2020: Thursday
 
@@ -160,15 +160,15 @@ Maybe I should look into which other frameworks are available and/or popular!
 
 **Thoughts:** I can't discuss the details here, but suffice it to say, I am happy with my progress so far, and I've learned a lot about Concurrent programming, something I'd never really tackled before!
 
-Oh yeah, and I also started to look at the **Bootstrap 4** section of the WebDev Bootcamp -- but more on that when I get time!
+Oh yeah, and I also started to look at the **Bootstrap 4** section of the WebDev BootCamp -- but more on that when I get time!
 
 ## Day 28: April 17, 2020: Friday
 
 ### 2020 WebDev BootCamp [Section 4](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/04-Intro_to_CSS) (Part II)
 
-**Today's Progress:** Intermediate CSS. Also played with "Intro to HTML" in FrontEnd Masters' Bootcamp.
+**Today's Progress:** Intermediate CSS. Also played with "Intro to HTML" in FrontEnd Masters' BootCamp.
 
-**Thoughts:** There were reasons I started looking at the FEM Bootcamp today. I'm not convinced that doing so was such a great idea though. I started getting bored--not because of the quality of the course, _per se_, but because it was mostly covering stuff I'd only just covered. I think I shall focus on just the one course at a time from now on.
+**Thoughts:** There were reasons I started looking at the FEM BootCamp today. I'm not convinced that doing so was such a great idea though. I started getting bored--not because of the quality of the course, _per se_, but because it was mostly covering stuff I'd only just covered. I think I shall focus on just the one course at a time from now on.
 
 And next up ... **Bootstrap 4** _WTFisBS4_? I feel like I've heard of it, and I _want_ to dive in--but for the next couple of days I'm actually really busy doing programming work I can't talk about here. I've got a lot to do and not much time to get it done, so I may be skipping a couple of days. We'll see...
 
@@ -190,7 +190,7 @@ And next up ... **Bootstrap 4** _WTFisBS4_? I feel like I've heard of it, and I 
 
 ## Day 25: April 14, 2020: Tuesday
 
-### 2020 Web Development Bootcamp [Section 2](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/02-Intro_to_HTML)
+### 2020 Web Development BootCamp [Section 2](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/02-Intro_to_HTML)
 
 **Today's Progress:** Started at the very beginning: Intro to HTML. Refreshing out-of-date knowledge.
 
@@ -534,7 +534,7 @@ More, smarter debugging and/or testing is required.
 
 **Thoughts:** As well as the overhaul of the Sudoku Grid internals, I ran into a little confusion over whether my grid was numbered 1-9 x 1-9, or 0-8 x 0-8. Internally, of course, the array index is zero-based, but in my head I'd been thinking one-based, and converting where required. I think this is because the valid values are 1-9. At some point during today's coding I started using zero-based loops, and when the two systems clashed, I ultimately set up the gridCoord array, so I could use "for xi, xn := range gridCoord" and use either xi or xn as required. Ultimately, this revealed to me that I really only require zero-based numbering of rows and columns!
 
-**Note**: I decided that keeping this log in reverse order (most recent day first) actually makes it easier to read. YMMV (and I may yet change my mind; it's known to happen!) I'm also thinking that very soon now I shall write a script or somthing to automate inserting the new day's date and template...
+**Note**: I decided that keeping this log in reverse order (most recent day first) actually makes it easier to read. YMMV (and I may yet change my mind; it's known to happen!) I'm also thinking that very soon now I shall write a script or something to automate inserting the new day's date and template...
 
 ### Log Incrementer [increment-log.py](https://github.com/PJSoftware/100-days-of-code/blob/master/increment-log.py)
 
