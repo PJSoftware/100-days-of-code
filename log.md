@@ -1,5 +1,11 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 50: May 12, 2020: Tuesday
+
+### Miscellaneous Coding Project: Iteration
+
+**Today's Progress:** Analyse, push new data back into dataset, re-analyse ... rinse, repeat. It took a bit of work to get the iterative process working but I got there.
+
 ## Day 49: May 11, 2020: Monday
 
 ### Miscellaneous Coding Project: Data Analysis
