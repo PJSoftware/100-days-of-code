@@ -1,5 +1,11 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 51: May 13, 2020: Wednesday
+
+### 2020 WebDev BootCamp [Section 20](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/20-API)
+
+**Today's Progress:** Using express.js and APIs, we developed a weather app.
+
 ## Day 50: May 12, 2020: Tuesday
 
 ### Miscellaneous Coding Project: Iteration
