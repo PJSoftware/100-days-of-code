@@ -42,13 +42,13 @@
 
 ## Day 45: May 5, 2020: Tuesday
 
-### 2020 WebDev BootCamp [Section 17](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/17-Node.js)
+### 2020 WebDev BootCamp [Section 18](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/18-Node.js)
 
 **Today's Progress:** Node.js: just like regular js, but with Nodes. I guess?! (I jest. Kinda.) We also covered bash, which was nothing new.
 
 ## Day 44: May 4, 2020: Monday
 
-### 2020 WebDev BootCamp [Section 14](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/14-The_Simon_Game)
+### 2020 WebDev BootCamp [Section 15](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/15-The_Simon_Game)
 
 **Today's Progress:** The Simon Game, using jQuery (from Section 13, which I also covered.)
 
@@ -58,7 +58,7 @@ While developing `Simon`, I struggled a little with jQuery; I think I was confus
 
 ## Day 43: May 3, 2020: Sunday
 
-### 2020 WebDev BootCamp [Section 12](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/12-Advanced_JavaScript)
+### 2020 WebDev BootCamp [Section 13](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/13-Advanced_JavaScript)
 
 **Today's Progress:** Advanced JavaScript: developed the drum playing website. Covers audio, animation, objects, and DOM manipulation.
 
@@ -76,7 +76,7 @@ Either way, here we are, 22 years later, and I've just learned how to get my web
 
 ## Day 42: May 2, 2020: Saturday
 
-### 2020 WebDev BootCamp [Section 11](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/11-The_Dice_Game)
+### 2020 WebDev BootCamp [Section 12](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/12-The_Dice_Game)
 
 **Today's Progress:** Document Object Model: The good stuff! Finally get to start doing something with JavaScript! Developing a "dice game" as a challenge.
 
@@ -108,7 +108,7 @@ Another late night. Secret project, etc. Got the new solution from Friday all co
 
 ## Day 36: April 26, 2020: Sunday
 
-Another late night working on my secret project. Had to pull the code apart and put it back together in order to make the next change. Of course, that gave me enough trouble that I was beginning to regret the move (and considering reverting to the earlier version) before I finally figiured out the best way to structure everything.
+Another late night working on my secret project. Had to pull the code apart and put it back together in order to make the next change. Of course, that gave me enough trouble that I was beginning to regret the move (and considering reverting to the earlier version) before I finally figured out the best way to structure everything.
 
 ## Day 35: April 24, 2020: Friday
 
