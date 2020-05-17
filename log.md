@@ -1,5 +1,27 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 54: May 16, 2020: Saturday
+
+### 2020 WebDev BootCamp [Section 20](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/20-API)
+
+**Today's Progress:** Development of our MailChimp-API app derailed by my dissatisfaction with how API-Key handling was being shown. Found my own solution.
+
+**Thoughts:** Our tutor was busy showing us how to sign up for MailChimp and get our API keys ... and I suddenly realised that simply pasting my API key into my code was not a great idea--especially since I'm saving all my progress up on GitHub, for the world to see.
+
+The problem of how to use secret auth codes (API Keys, Passwords, etc) in code is an ongoing one, and one which does not seem to have a single "best practice" solution. Certainly it's a problem I've wrestled with in the past, and I've not always handled it particularly well. Often I've relied on the "fact" that I've been the only programmer in the office; there are plenty of my old Perl scripts out there which contain database passwords hard-coded in them.
+
+I came up with a solution to this only quite recently. My TweetCommit code does not store my Twitter API authorisation keys; rather it reeds them from a locally-stored JSON file. (I planned ahead: the folder in which my twitter tokens live is a git repo with a _local_ upstream repo; both machines on which I do my development can pull from the local repo, and obviously push back to it when I add new information.) Obviously now that I'm coding with JS, using JSON data is a no-brainer. OTOH, I spent literally hours on google trying to find a way for my Node.js code to read from a JSON file, and had very little luck getting it to work.
+
+Finally, I discovered I could literally `require()` the JSON file into my code and access the contents directly--which is great, and exactly as easy as it _should_ be, except it now required my JSON file to be back in the folder tree, right where I didn't want it to be.
+
+My final solution: stick it in a folder with a `.gitignore` so it wouldn't be committed to GitHub, and add a shell script to simplify copying the relevant file in from its location in the other repo.
+
+Not perfect, but it'll do, and it got me working again; I literally could not progress until I'd resolved this to my satisfaction. (I also went back and applied the same solution to my openweathermap API. I had already committed that, so I deleted and refreshed my private key for that API...)
+
+## Day 52 & 53
+
+### More of the same
+
 ## Day 51: May 13, 2020: Wednesday
 
 ### 2020 WebDev BootCamp [Section 20](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/20-API)
