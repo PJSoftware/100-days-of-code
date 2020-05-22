@@ -1,5 +1,20 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 58: May 22, 2020: Friday
+
+### 2020 WebDev BootCamp [Section 23](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/23-Blog_Challenge)
+
+**Today's Progress:** Writing a simple blog app from scratch (and with no persistent storage; databases are up next!)
+
+Skipped days:
+
+- Day 57: May 21, 2020: Thursday
+- Day 56: May 20, 2020: Wednesday
+- Day 56: May 19, 2020: Tuesday
+- Day 55: May 17, 2020: Sunday
+
+Work progressed on the WebDev bootcamp, including Section 22: EJS.
+
 ## Day 54: May 16, 2020: Saturday
 
 ### 2020 WebDev BootCamp [Section 20](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/20-API)
