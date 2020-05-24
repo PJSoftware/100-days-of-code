@@ -1,5 +1,15 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 59: May 23, 2020: Saturday
+
+### 2020 WebDev BootCamp Sections 24 & 25
+
+**Today's Progress:** Databases. SQL. Oh my. Nothing new to learn here. Also, more secret squirrel coding...
+
+**Thoughts:** Next up: MongoDB. NoSQL databases. I don't know much about these so I guess we'll be learning something new!
+
+My SQL Join knowledge could do with a little work 'cos I've always worked around it... Should dig into that more at some point...
+
 ## Day 58: May 22, 2020: Friday
 
 ### 2020 WebDev BootCamp [Section 23](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/23-Blog_Challenge)
