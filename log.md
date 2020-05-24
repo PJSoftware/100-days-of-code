@@ -27,7 +27,7 @@ Work progressed on the WebDev bootcamp, including Section 22: EJS.
 
 ## Day 54: May 16, 2020: Saturday
 
-### 2020 WebDev BootCamp [Section 20](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/20-API)
+### 2020 WebDev BootCamp [Section 20](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/20-API) Day 2
 
 **Today's Progress:** Development of our MailChimp-API app derailed by my dissatisfaction with how API-Key handling was being shown. Found my own solution.
 
