@@ -12,7 +12,7 @@ My SQL Join knowledge could do with a little work 'cos I've always worked around
 
 ## Day 58: May 22, 2020: Friday
 
-### 2020 WebDev BootCamp [Section 23](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/23-Blog_Challenge)
+### 2020 WebDev BootCamp Section 23
 
 **Today's Progress:** Writing a simple blog app from scratch (and with no persistent storage; databases are up next!)
 
@@ -27,7 +27,7 @@ Work progressed on the WebDev bootcamp, including Section 22: EJS.
 
 ## Day 54: May 16, 2020: Saturday
 
-### 2020 WebDev BootCamp [Section 20](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/20-API)
+### 2020 WebDev BootCamp Section 20 (Part II)
 
 **Today's Progress:** Development of our MailChimp-API app derailed by my dissatisfaction with how API-Key handling was being shown. Found my own solution.
 
@@ -49,7 +49,7 @@ Not perfect, but it'll do, and it got me working again; I literally could not pr
 
 ## Day 51: May 13, 2020: Wednesday
 
-### 2020 WebDev BootCamp [Section 20](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/20-API)
+### 2020 WebDev BootCamp Section 20
 
 **Today's Progress:** Using express.js and APIs, we developed a weather app.
 
@@ -89,13 +89,13 @@ Not perfect, but it'll do, and it got me working again; I literally could not pr
 
 ## Day 45: May 5, 2020: Tuesday
 
-### 2020 WebDev BootCamp [Section 18](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/18-Node.js)
+### 2020 WebDev BootCamp Section 18
 
 **Today's Progress:** Node.js: just like regular js, but with Nodes. I guess?! (I jest. Kinda.) We also covered bash, which was nothing new.
 
 ## Day 44: May 4, 2020: Monday
 
-### 2020 WebDev BootCamp [Section 15](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/15-The_Simon_Game)
+### 2020 WebDev BootCamp Section 15
 
 **Today's Progress:** The Simon Game, using jQuery (from Section 13, which I also covered.)
 
@@ -105,7 +105,7 @@ While developing `Simon`, I struggled a little with jQuery; I think I was confus
 
 ## Day 43: May 3, 2020: Sunday
 
-### 2020 WebDev BootCamp [Section 13](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/13-Advanced_JavaScript)
+### 2020 WebDev BootCamp Section 13
 
 **Today's Progress:** Advanced JavaScript: developed the drum playing website. Covers audio, animation, objects, and DOM manipulation.
 
@@ -123,7 +123,7 @@ Either way, here we are, 22 years later, and I've just learned how to get my web
 
 ## Day 42: May 2, 2020: Saturday
 
-### 2020 WebDev BootCamp [Section 12](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/12-The_Dice_Game)
+### 2020 WebDev BootCamp Section 12
 
 **Today's Progress:** Document Object Model: The good stuff! Finally get to start doing something with JavaScript! Developing a "dice game" as a challenge.
 
@@ -165,7 +165,7 @@ I was also up late working on my secret project. Very late. So late that on Satu
 
 ## Day 34: April 23, 2020: Thursday
 
-### 2020 WebDev BootCamp [Section 7](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/07-IntermediateBootstrap)
+### 2020 WebDev BootCamp Section 7
 
 **Today's Progress:** Bootstrap completed; looking forward to getting into JavaScript!
 
@@ -177,7 +177,7 @@ I ... working through the last couple of sections have actually given me a few i
 
 ## Day 33: April 22, 2020: Wednesday
 
-### 2020 WebDev BootCamp [Section 6](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/06-Intro_to_Bootstrap4)
+### 2020 WebDev BootCamp Section 6
 
 **Today's Progress:** I think this is the first time I've used a CSS framework. Definitely the first time I've dug deeply.
 
@@ -223,7 +223,7 @@ Oh yeah, and I also started to look at the **Bootstrap 4** section of the WebDev
 
 ## Day 28: April 17, 2020: Friday
 
-### 2020 WebDev BootCamp [Section 4](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/04-Intro_to_CSS) (Part II)
+### 2020 WebDev BootCamp Section 4 (Part II)
 
 **Today's Progress:** Intermediate CSS. Also played with "Intro to HTML" in FrontEnd Masters' BootCamp.
 
@@ -233,7 +233,7 @@ And next up ... **Bootstrap 4** _WTFisBS4_? I feel like I've heard of it, and I 
 
 ## Day 27: April 16, 2020: Thursday
 
-### 2020 WebDev BootCamp [Section 4](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/04-Intro_to_CSS)
+### 2020 WebDev BootCamp Section 4
 
 **Today's Progress:** Intro to CSS. CSS is cool. I've loved it since I first discovered it.
 
@@ -241,7 +241,7 @@ And next up ... **Bootstrap 4** _WTFisBS4_? I feel like I've heard of it, and I 
 
 ## Day 26: April 15, 2020: Wednesday
 
-### 2020 WebDev BootCamp [Section 3](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/03-Intermediate_HTML)
+### 2020 WebDev BootCamp Section 3
 
 **Today's Progress:** Intermediate HTML. I am actually learning a few things which have changed since I last played with HTML.
 
