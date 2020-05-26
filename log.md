@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 61: May 26, 2020: Tuesday
+
+### 2020 WebDev Bootcamp Section 26 Day II
+
+**Today's Progress:** MongoDB. If I've learned anything it's that the default Node.JS driver is ... needlessly complex. Next up: Mongoose to the rescue.
+
+**Thoughts:** Also, callbacks everywhere? I guess it's a JS thing?!
+
 ## Day 60: May 25, 2020: Monday
 
 ### 2020 WebDev Bootcamp Section 26
