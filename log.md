@@ -1,5 +1,11 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 60: May 25, 2020: Monday
+
+### 2020 WebDev Bootcamp Section 26
+
+**Today's Progress:** MongoDB. (I feel vaguely like Flash Gordon.) Not sure how I feel about NoSQL (I'm an SQL junkie) but I can see how this's play nice with JS (and Go!)
+
 ## Day 59: May 23, 2020: Saturday
 
 ### 2020 WebDev BootCamp Sections 24 & 25
