@@ -1,5 +1,11 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 62: May 27, 2020: Wednesday
+
+### 2020 WebDev Bootcamp Section 27
+
+**Today's Progress:** Mongoose. So much nicer than using out-of-the-box MongoDB.
+
 ## Day 61: May 26, 2020: Tuesday
 
 ### 2020 WebDev Bootcamp Section 26 Day II
