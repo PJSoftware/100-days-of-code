@@ -1,5 +1,11 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 63: May 28, 2020: Thursday
+
+### 2020 WebDev Bootcamp Section 28
+
+**Today's Progress:** Updating our EJS project; now with added database. Everything is better with a database (even if it's a NoSQL DB...)
+
 ## Day 62: May 27, 2020: Wednesday
 
 ### 2020 WebDev Bootcamp Section 27
@@ -18,7 +24,7 @@
 
 ### 2020 WebDev Bootcamp Section 26
 
-**Today's Progress:** MongoDB. (I feel vaguely like Flash Gordon.) Not sure how I feel about NoSQL (I'm an SQL junkie) but I can see how this's play nice with JS (and Go!)
+**Today's Progress:** MongoDB. (I feel vaguely like Flash Gordon.) Not sure how I feel about NoSQL (I'm an SQL junkie) but I can see how this would play nice with JS (and Go!)
 
 ## Day 59: May 23, 2020: Saturday
 
