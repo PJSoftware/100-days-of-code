@@ -1,5 +1,27 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 66: May 31, 2020: Sunday
+
+### 2020 WebDev Bootcamp Section 31
+
+**Today's Progress:** Built a RESTful API from scratch, using JS, Express, Mongoose.
+
+**Thoughts:** I should go back and compare this code with the one I wrote in Go, 4-5 months ago.
+
+## Day 65: May 30, 2020: Saturday
+
+### 2020 WebDev Bootcamp Section 30
+
+**Today's Progress:** Added MongoDB to our blog project from Section 23
+
+## Day 64: May 29, 2020: Friday
+
+### 2020 WebDev Bootcamp Section 29
+
+**Today's Progress:** Looking at deploying on Heroku and in the MongoDB cloud server. Did not actually deploy my project.
+
+**Thoughts:** Any web development in the immediate future, I will actually do on my hosted page, for which I have PHP and MySQL. I can certainly see the benefits of developing servers for local apps, so this may all come in handy for those, but it's unlikely and commercial work will be hosted on Heroku...
+
 ## Day 63: May 28, 2020: Thursday
 
 ### 2020 WebDev Bootcamp Section 28
