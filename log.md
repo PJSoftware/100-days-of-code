@@ -1,5 +1,126 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 66: May 31, 2020: Sunday
+
+### 2020 WebDev Bootcamp Section 31
+
+**Today's Progress:** Built a RESTful API from scratch, using JS, Express, Mongoose.
+
+**Thoughts:** I should go back and compare this code with the one I wrote in Go, 4-5 months ago.
+
+## Day 65: May 30, 2020: Saturday
+
+### 2020 WebDev Bootcamp Section 30
+
+**Today's Progress:** Added MongoDB to our blog project from Section 23
+
+## Day 64: May 29, 2020: Friday
+
+### 2020 WebDev Bootcamp Section 29
+
+**Today's Progress:** Looking at deploying on Heroku and in the MongoDB cloud server. Did not actually deploy my project.
+
+**Thoughts:** Any web development in the immediate future, I will actually do on my hosted page, for which I have PHP and MySQL. I can certainly see the benefits of developing servers for local apps, so this may all come in handy for those, but it's unlikely and commercial work will be hosted on Heroku...
+
+## Day 63: May 28, 2020: Thursday
+
+### 2020 WebDev Bootcamp Section 28
+
+**Today's Progress:** Updating our EJS project; now with added database. Everything is better with a database (even if it's a NoSQL DB...)
+
+## Day 62: May 27, 2020: Wednesday
+
+### 2020 WebDev Bootcamp Section 27
+
+**Today's Progress:** Mongoose. So much nicer than using out-of-the-box MongoDB.
+
+## Day 61: May 26, 2020: Tuesday
+
+### 2020 WebDev Bootcamp Section 26 Day II
+
+**Today's Progress:** MongoDB. If I've learned anything it's that the default Node.JS driver is ... needlessly complex. Next up: Mongoose to the rescue.
+
+**Thoughts:** Also, callbacks everywhere? I guess it's a JS thing?!
+
+## Day 60: May 25, 2020: Monday
+
+### 2020 WebDev Bootcamp Section 26
+
+**Today's Progress:** MongoDB. (I feel vaguely like Flash Gordon.) Not sure how I feel about NoSQL (I'm an SQL junkie) but I can see how this would play nice with JS (and Go!)
+
+## Day 59: May 23, 2020: Saturday
+
+### 2020 WebDev BootCamp Sections 24 & 25
+
+**Today's Progress:** Databases. SQL. Oh my. Nothing new to learn here. Also, more secret squirrel coding...
+
+**Thoughts:** Next up: MongoDB. NoSQL databases. I don't know much about these so I guess we'll be learning something new!
+
+My SQL Join knowledge could do with a little work 'cos I've always worked around it... Should dig into that more at some point...
+
+## Day 58: May 22, 2020: Friday
+
+### 2020 WebDev BootCamp Section 23
+
+**Today's Progress:** Writing a simple blog app from scratch (and with no persistent storage; databases are up next!)
+
+Skipped days:
+
+- Day 57: May 21, 2020: Thursday
+- Day 56: May 20, 2020: Wednesday
+- Day 56: May 19, 2020: Tuesday
+- Day 55: May 17, 2020: Sunday
+
+Work progressed on the WebDev bootcamp, including Section 22: EJS.
+
+## Day 54: May 16, 2020: Saturday
+
+### 2020 WebDev BootCamp Section 20 (Part II)
+
+**Today's Progress:** Development of our MailChimp-API app derailed by my dissatisfaction with how API-Key handling was being shown. Found my own solution.
+
+**Thoughts:** Our tutor was busy showing us how to sign up for MailChimp and get our API keys ... and I suddenly realised that simply pasting my API key into my code was not a great idea--especially since I'm saving all my progress up on GitHub, for the world to see.
+
+The problem of how to use secret auth codes (API Keys, Passwords, etc) in code is an ongoing one, and one which does not seem to have a single "best practice" solution. Certainly it's a problem I've wrestled with in the past, and I've not always handled it particularly well. Often I've relied on the "fact" that I've been the only programmer in the office; there are plenty of my old Perl scripts out there which contain database passwords hard-coded in them.
+
+I came up with a solution to this only quite recently. My TweetCommit code does not store my Twitter API authorisation keys; rather it reeds them from a locally-stored JSON file. (I planned ahead: the folder in which my twitter tokens live is a git repo with a _local_ upstream repo; both machines on which I do my development can pull from the local repo, and obviously push back to it when I add new information.) Obviously now that I'm coding with JS, using JSON data is a no-brainer. OTOH, I spent literally hours on google trying to find a way for my Node.js code to read from a JSON file, and had very little luck getting it to work.
+
+Finally, I discovered I could literally `require()` the JSON file into my code and access the contents directly--which is great, and exactly as easy as it _should_ be, except it now required my JSON file to be back in the folder tree, right where I didn't want it to be.
+
+My final solution: stick it in a folder with a `.gitignore` so it wouldn't be committed to GitHub, and add a shell script to simplify copying the relevant file in from its location in the other repo.
+
+Not perfect, but it'll do, and it got me working again; I literally could not progress until I'd resolved this to my satisfaction. (I also went back and applied the same solution to my openweathermap API. I had already committed that, so I deleted and refreshed my private key for that API...)
+
+## Day 52 & 53
+
+### More of the same
+
+## Day 51: May 13, 2020: Wednesday
+
+### 2020 WebDev BootCamp Section 20
+
+**Today's Progress:** Using express.js and APIs, we developed a weather app.
+
+## Day 50: May 12, 2020: Tuesday
+
+### Miscellaneous Coding Project: Iteration
+
+**Today's Progress:** Analyse, push new data back into dataset, re-analyse ... rinse, repeat. It took a bit of work to get the iterative process working but I got there.
+
+## Day 49: May 11, 2020: Monday
+
+### Miscellaneous Coding Project: Data Analysis
+
+**Today's Progress:** Performing automated data analysis. The results were ... inconclusive. Also: VSCods is awesome!
+
+**Thoughts:** Today I was getting a little frustrated that the VSCode installations on my two different workplaces (laptop vs desktop) had different settings, different extensions, and were generally drifting further apart by the day. I spent a little time searching for a half-remembered package I had installed on my laptop over the weekend, and instead discovered the `Sync Settings` extension. (Which, as well as solving my extension issues, also introduced me to the wonderful world of `github` _gists_.) Now both machines are back in sync, and I've got several other cool extensions installed as well.
+
+## Day 48: May 8, 2020: Friday
+
+### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Refactored, testing improved
+
+**Today's Progress:** The log parsing code was ... convoluted and messy. It needed to be cleaned up, Now it's better, and more easily testable.
+
 ## Day 47: May 7, 2020: Thursday
 
 ### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Regexp handling fixed
@@ -16,13 +137,13 @@
 
 ## Day 45: May 5, 2020: Tuesday
 
-### 2020 WebDev BootCamp [Section 17](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/17-Node.js)
+### 2020 WebDev BootCamp Section 18
 
 **Today's Progress:** Node.js: just like regular js, but with Nodes. I guess?! (I jest. Kinda.) We also covered bash, which was nothing new.
 
 ## Day 44: May 4, 2020: Monday
 
-### 2020 WebDev BootCamp [Section 14](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/14-The_Simon_Game)
+### 2020 WebDev BootCamp Section 15
 
 **Today's Progress:** The Simon Game, using jQuery (from Section 13, which I also covered.)
 
@@ -32,7 +153,7 @@ While developing `Simon`, I struggled a little with jQuery; I think I was confus
 
 ## Day 43: May 3, 2020: Sunday
 
-### 2020 WebDev BootCamp [Section 12](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/12-Advanced_JavaScript)
+### 2020 WebDev BootCamp Section 13
 
 **Today's Progress:** Advanced JavaScript: developed the drum playing website. Covers audio, animation, objects, and DOM manipulation.
 
@@ -50,7 +171,7 @@ Either way, here we are, 22 years later, and I've just learned how to get my web
 
 ## Day 42: May 2, 2020: Saturday
 
-### 2020 WebDev BootCamp [Section 11](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/11-The_Dice_Game)
+### 2020 WebDev BootCamp Section 12
 
 **Today's Progress:** Document Object Model: The good stuff! Finally get to start doing something with JavaScript! Developing a "dice game" as a challenge.
 
@@ -58,11 +179,11 @@ Either way, here we are, 22 years later, and I've just learned how to get my web
 
 ### [TweetCommit](https://github.com/PJSoftware/100-days-of-code/tree/master/TweetCommit) Relocated
 
-**Today's Progress:** Thinking about git branching made me realise TweetCommit belonged inside my 100daysofcode repo.
+**Today's Progress:** Thinking about git branching made me realise TweetCommit belonged inside my 100DaysOfCode repo.
 
 **Thoughts:** Because TweetCommit is _only_ used for tweeting/committing changes to the `log.md` file in this repository, I decided it _belonged_ here, rather than in a separate repo! The realisation came to me because, after my adventures in git-branching (see yesterday's entry) I wanted to do something a little more than simply commit absolutely everything onto `master`. To do this I needed to modify both `increment-log.py` and `TweetCommit`; they are two halves of the same coin, but lived in separate repositories... That seemed wrong!
 
-I merged my TweetCommit repository into my 100DaysofCode repository (see [here](https://saintgimp.org/2013/01/22/merging-two-git-repositories-into-one-repository-without-losing-file-history/) and [here](https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase) for details on how I did this.) I then modified the code as necessary (as I type this I realise I need to make one more change to `TweetCommit`, but I'll confirm that by running it to comit this file!)
+I merged my TweetCommit repository into my 100DaysOfCode repository (see [here](https://saintgimp.org/2013/01/22/merging-two-git-repositories-into-one-repository-without-losing-file-history/) and [here](https://stackoverflow.com/questions/37937984/git-refusing-to-merge-unrelated-histories-on-rebase) for details on how I did this.) I then modified the code as necessary (as I type this I realise I need to make one more change to `TweetCommit`, but I'll confirm that by running it to commit this file!)
 
 ## Day 40: April 30, 2020: Thursday
 
@@ -82,7 +203,7 @@ Another late night. Secret project, etc. Got the new solution from Friday all co
 
 ## Day 36: April 26, 2020: Sunday
 
-Another late night working on my secret project. Had to pull the code apart and put it back together in order to make the next change. Of course, that gave me enough trouble that I was beginning to regret the move (and considering reverting to the earlier version) before I finally figiured out the best way to structure everything.
+Another late night working on my secret project. Had to pull the code apart and put it back together in order to make the next change. Of course, that gave me enough trouble that I was beginning to regret the move (and considering reverting to the earlier version) before I finally figured out the best way to structure everything.
 
 ## Day 35: April 24, 2020: Friday
 
@@ -92,7 +213,7 @@ I was also up late working on my secret project. Very late. So late that on Satu
 
 ## Day 34: April 23, 2020: Thursday
 
-### 2020 WebDev BootCamp [Section 7](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/07-IntermediateBootstrap)
+### 2020 WebDev BootCamp Section 7
 
 **Today's Progress:** Bootstrap completed; looking forward to getting into JavaScript!
 
@@ -104,7 +225,7 @@ I ... working through the last couple of sections have actually given me a few i
 
 ## Day 33: April 22, 2020: Wednesday
 
-### 2020 WebDev BootCamp [Section 6](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/06-Intro_to_Bootstrap4)
+### 2020 WebDev BootCamp Section 6
 
 **Today's Progress:** I think this is the first time I've used a CSS framework. Definitely the first time I've dug deeply.
 
@@ -146,21 +267,21 @@ Maybe I should look into which other frameworks are available and/or popular!
 
 **Thoughts:** I can't discuss the details here, but suffice it to say, I am happy with my progress so far, and I've learned a lot about Concurrent programming, something I'd never really tackled before!
 
-Oh yeah, and I also started to look at the **Bootstrap 4** section of the WebDev Bootcamp -- but more on that when I get time!
+Oh yeah, and I also started to look at the **Bootstrap 4** section of the WebDev BootCamp -- but more on that when I get time!
 
 ## Day 28: April 17, 2020: Friday
 
-### 2020 WebDev BootCamp [Section 4](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/04-Intro_to_CSS) (Part II)
+### 2020 WebDev BootCamp Section 4 (Part II)
 
-**Today's Progress:** Intermediate CSS. Also played with "Intro to HTML" in FrontEnd Masters' Bootcamp.
+**Today's Progress:** Intermediate CSS. Also played with "Intro to HTML" in FrontEnd Masters' BootCamp.
 
-**Thoughts:** There were reasons I started looking at the FEM Bootcamp today. I'm not convinced that doing so was such a great idea though. I started getting bored--not because of the quality of the course, _per se_, but because it was mostly covering stuff I'd only just covered. I think I shall focus on just the one course at a time from now on.
+**Thoughts:** There were reasons I started looking at the FEM BootCamp today. I'm not convinced that doing so was such a great idea though. I started getting bored--not because of the quality of the course, _per se_, but because it was mostly covering stuff I'd only just covered. I think I shall focus on just the one course at a time from now on.
 
 And next up ... **Bootstrap 4** _WTFisBS4_? I feel like I've heard of it, and I _want_ to dive in--but for the next couple of days I'm actually really busy doing programming work I can't talk about here. I've got a lot to do and not much time to get it done, so I may be skipping a couple of days. We'll see...
 
 ## Day 27: April 16, 2020: Thursday
 
-### 2020 WebDev BootCamp [Section 4](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/04-Intro_to_CSS)
+### 2020 WebDev BootCamp Section 4
 
 **Today's Progress:** Intro to CSS. CSS is cool. I've loved it since I first discovered it.
 
@@ -168,7 +289,7 @@ And next up ... **Bootstrap 4** _WTFisBS4_? I feel like I've heard of it, and I 
 
 ## Day 26: April 15, 2020: Wednesday
 
-### 2020 WebDev BootCamp [Section 3](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/03-Intermediate_HTML)
+### 2020 WebDev BootCamp Section 3
 
 **Today's Progress:** Intermediate HTML. I am actually learning a few things which have changed since I last played with HTML.
 
@@ -176,7 +297,7 @@ And next up ... **Bootstrap 4** _WTFisBS4_? I feel like I've heard of it, and I 
 
 ## Day 25: April 14, 2020: Tuesday
 
-### 2020 Web Development Bootcamp [Section 2](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/02-Intro_to_HTML)
+### 2020 Web Development BootCamp [Section 2](https://github.com/PJSoftware/udemy-2020webdev/tree/master/Sections/02-Intro_to_HTML)
 
 **Today's Progress:** Started at the very beginning: Intro to HTML. Refreshing out-of-date knowledge.
 
@@ -520,7 +641,7 @@ More, smarter debugging and/or testing is required.
 
 **Thoughts:** As well as the overhaul of the Sudoku Grid internals, I ran into a little confusion over whether my grid was numbered 1-9 x 1-9, or 0-8 x 0-8. Internally, of course, the array index is zero-based, but in my head I'd been thinking one-based, and converting where required. I think this is because the valid values are 1-9. At some point during today's coding I started using zero-based loops, and when the two systems clashed, I ultimately set up the gridCoord array, so I could use "for xi, xn := range gridCoord" and use either xi or xn as required. Ultimately, this revealed to me that I really only require zero-based numbering of rows and columns!
 
-**Note**: I decided that keeping this log in reverse order (most recent day first) actually makes it easier to read. YMMV (and I may yet change my mind; it's known to happen!) I'm also thinking that very soon now I shall write a script or somthing to automate inserting the new day's date and template...
+**Note**: I decided that keeping this log in reverse order (most recent day first) actually makes it easier to read. YMMV (and I may yet change my mind; it's known to happen!) I'm also thinking that very soon now I shall write a script or something to automate inserting the new day's date and template...
 
 ### Log Incrementer [increment-log.py](https://github.com/PJSoftware/100-days-of-code/blob/master/increment-log.py)
 
