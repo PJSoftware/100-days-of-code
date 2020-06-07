@@ -1,5 +1,13 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 67: June 7, 2020: Sunday
+
+### [Win-Spotlight](https://github.com/PJSoftware/Win-Spotlight) Added git support
+
+**Today's Progress:** Added support for wallpaper folders under version control; git support enabled but easily extendible.
+
+**Thoughts:** Before I removed `DeleteDuplicate` again, I added `SVN` support. Now that the duplicate detection is integral to `UpdateSpotlight` I decided to add optional Version Control support back in. Now though, I was much more comfortable with `Git` command-line, and it was just ... easier than using `SVN` from the command line. So I transferred my wallpaper folder from `SVN` to `Git`, and added `Git` support. The code can easily be extended to add support for other Version Control systems if requested.
+
 ## Day 66: May 31, 2020: Sunday
 
 ### 2020 WebDev Bootcamp Section 31
