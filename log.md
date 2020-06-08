@@ -1,5 +1,17 @@
 # Pete's Log: 100 Days Of Code Challenge (Round 1)
 
+## Day 68: June 8, 2020: Monday
+
+### [Sudoku Solver](https://github.com/PJSoftware/sudoku-solver) Day 11
+
+**Today's Progress:** It's been two months, but I hadn't forgotten. Added recursive solver; it works on all my puzzles.
+
+**Thoughts:** Watching numerous [Computerphile YouTube videos](https://www.youtube.com/channel/UC9-y-6csu5WGm29I7JiwpnA), I found one that talked about a _recursive_ Sudoku solver, written in Python. The code seemed somewhat incomplete; it uses backtracking, and as far as I can tell, it actually finds a solution, then backtracks fully to the starting point before exiting. It displays the solution when it finds it, but does not preserve the solution.
+
+I rewrote the Python version to fit into my Go code, stripped out everything that was no longer required (a substantial percentage) and tried it out. It worked, happily solving all six of my predefined puzzles (my previous version could only solve four!)
+
+It occurs to me that if I modified the code to backtrack fully even in case of a success, it could be used as part of a sudoku-generator. I shall keep that for a future attempt, though.
+
 ## Day 67: June 7, 2020: Sunday
 
 ### [Win-Spotlight](https://github.com/PJSoftware/Win-Spotlight) Added git support
